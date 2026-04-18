@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: c7242e8933522474898151da460dd087
+  productGUID: ad04ddd089168ef44a367e129a66c4ef
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,8 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: The Fanta-stupendous Adventures of Piko the Sweet Slime in the Candy
-    World
+  productName: FiresideJam2026
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -606,16 +605,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: The Fanta-stupendous Adventures of Piko the Sweet Slime in the
-    Candy World
+  metroPackageName: FiresideJam2026
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: The Fanta-stupendous Adventures of Piko the Sweet
-    Slime in the Candy World
+  metroApplicationDescription: FiresideJam2026
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
