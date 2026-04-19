@@ -130,7 +130,7 @@ public class SoftBody : MonoBehaviour
 
         for (int i = 0; i < _points.Length; ++i)
         {
-            sum += (Vector2)_points[i].transform.localPosition;
+            sum += (Vector2)_points[i].transform.position;
         }
         
         return sum / _points.Length;
