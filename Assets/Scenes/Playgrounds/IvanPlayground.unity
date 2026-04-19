@@ -873,8 +873,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoftBody
   _numberOfVertices: 12
-  _radius: 2
+  _radius: 1
   _anchor: {fileID: 457906296}
+  _pointRadius: 0.1
+  _tangentFactor: 0.25
   _spriteShapeController: {fileID: 811535558}
 --- !u!114 &1152189405
 MonoBehaviour:

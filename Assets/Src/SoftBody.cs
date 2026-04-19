@@ -9,6 +9,8 @@ public class SoftBody : MonoBehaviour
     [SerializeField] private int _numberOfVertices = 16;
     [SerializeField] private float _radius = 2f;
     [SerializeField] private Transform _anchor;
+    [SerializeField] private float _pointRadius = 0.25f;
+    [SerializeField] private float _tangentFactor = 0.5f;
     
     [SerializeField] private SpriteShapeController _spriteShapeController;
     private GameObject[] _points;
@@ -35,7 +37,7 @@ public class SoftBody : MonoBehaviour
             _points[i].GetComponent<Rigidbody2D>().mass = 0.1f;
             _points[i].GetComponent<Rigidbody2D>().freezeRotation = true;
             _points[i].GetComponent<Rigidbody2D>().angularDamping = 0.0f;
-            _points[i].GetComponent<CircleCollider2D>().radius = 0.25f;
+            _points[i].GetComponent<CircleCollider2D>().radius = _pointRadius;
             _points[i].transform.SetParent(this.transform);
             _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f).normalized * _radius;
             
@@ -106,13 +108,16 @@ public class SoftBody : MonoBehaviour
             
             Vector2 prev = _points[(i - 1 +  _points.Length) % _points.Length].transform.localPosition;
             Vector2 prevToCenter = (center - prev).normalized;
-            Vector2 prevEdge = prev + prevToCenter * _points[(i - 1 +  _points.Length) % _points.Length].GetComponent<CircleCollider2D>().radius;
+            Vector2 prevEdge = prev - prevToCenter * _points[(i - 1 +  _points.Length) % _points.Length].GetComponent<CircleCollider2D>().radius;
             
             Vector2 next = _points[(i + 1) % _points.Length].transform.localPosition;
             Vector2 nextToCenter = (center - next).normalized;
-            Vector2 nextEdge = next + nextToCenter * _points[(i + 1) % _points.Length].GetComponent<CircleCollider2D>().radius;
+            Vector2 nextEdge = next - nextToCenter * _points[(i + 1) % _points.Length].GetComponent<CircleCollider2D>().radius;
             
-            Vector2 rightTangent = (nextEdge - prevEdge).normalized * 0.5f;
+            Vector2 rightTangent = (nextEdge - prevEdge).normalized;
+            
+            float lenght = (prev - vertex).magnitude + (next - vertex).magnitude;
+            rightTangent *= lenght * _tangentFactor;
             
             _spriteShapeController.spline.SetLeftTangent(i, -rightTangent);
             _spriteShapeController.spline.SetRightTangent(i, rightTangent);
