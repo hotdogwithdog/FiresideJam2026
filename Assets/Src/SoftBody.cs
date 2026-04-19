@@ -8,6 +8,7 @@ public class SoftBody : MonoBehaviour
 {
     [SerializeField] private int _numberOfVertices = 16;
     [SerializeField] private float _radius = 2f;
+    [SerializeField] private Transform _anchor;
     
     [SerializeField] private SpriteShapeController _spriteShapeController;
     private GameObject[] _points;
@@ -33,6 +34,7 @@ public class SoftBody : MonoBehaviour
 
             _points[i].GetComponent<Rigidbody2D>().mass = 0.1f;
             _points[i].GetComponent<Rigidbody2D>().freezeRotation = true;
+            _points[i].GetComponent<Rigidbody2D>().angularDamping = 0.0f;
             _points[i].GetComponent<CircleCollider2D>().radius = 0.25f;
             _points[i].transform.SetParent(this.transform);
             _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f).normalized * _radius;
@@ -88,6 +90,7 @@ public class SoftBody : MonoBehaviour
     private void UpdateVertices()
     {
         Vector2 center = GetCenter();
+        _anchor.position = center;
         for (int i = 0; i < _points.Length; ++i)
         {
             Vector2 vertex = _points[i].transform.localPosition;
