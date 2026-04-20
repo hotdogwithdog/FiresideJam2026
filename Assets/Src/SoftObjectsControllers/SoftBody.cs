@@ -11,7 +11,7 @@ namespace SoftBodyControllers
         {
             public int index;
             public float[] baseDistances;
-            public AnchoredJoint2D[] joints;
+            public SpringJoint2D[] springJoints;
         }
 
 
@@ -61,20 +61,20 @@ namespace SoftBodyControllers
 
         protected void InitPointJointsDistances()
         {
-            // at least that space but probably it need to reallocate for more space the alternative is one previous foreach that counts how many joints have the object
+            // at least that space but probably it need to reallocate for more space the alternative is one previous foreach that counts how many springJoints have the object
             _pointJointsDistances = new List<PointJointsDistances>(_points.Length);
             _pointsColliderRaiusBase =  new float[_points.Length];
             for (int i = 0; i < _points.Length; ++i)
             {
-                AnchoredJoint2D[] joints = _points[i].gameObject.GetComponents<AnchoredJoint2D>();
+                SpringJoint2D[] joints = _points[i].gameObject.GetComponents<SpringJoint2D>();
                 PointJointsDistances pointJointsDistances = new PointJointsDistances();
                 pointJointsDistances.index = i;
                 pointJointsDistances.baseDistances = new float[joints.Length];
-                pointJointsDistances.joints = joints;
+                pointJointsDistances.springJoints = joints;
 
                 for (int j = 0; j < joints.Length; ++j)
                 {
-                    pointJointsDistances.baseDistances[j] = GetJointDistance(joints[j]);
+                    pointJointsDistances.baseDistances[j] = joints[j].distance;
                 }
                 
                 _pointJointsDistances.Add(pointJointsDistances);
@@ -95,9 +95,9 @@ namespace SoftBodyControllers
 
             for (int i = 0; i < _pointJointsDistances.Count; ++i)
             {
-                for (int j = 0; j < _pointJointsDistances[i].joints.Length; ++j)
+                for (int j = 0; j < _pointJointsDistances[i].springJoints.Length; ++j)
                 {
-                    SetJointDistance(_pointJointsDistances[i].joints[j], _pointJointsDistances[i].baseDistances[j] * _scale);
+                    _pointJointsDistances[i].springJoints[j].distance = _pointJointsDistances[i].baseDistances[j] * _scale;
                 }
             }
 
@@ -221,36 +221,6 @@ namespace SoftBodyControllers
             }
 
             return sum / _points.Length;
-        }
-
-        private void SetJointDistance(AnchoredJoint2D joint, float value)
-        {
-            switch (joint)
-            {
-                case DistanceJoint2D d:
-                    d.distance = value;
-                    return;
-                case SpringJoint2D d:
-                    d.distance = value;
-                    return;
-                default:
-                    Debug.LogError("SoftBody::SetJointDistance: The Joint type is not supported");
-                    return;
-            }
-        }
-
-        private float GetJointDistance(AnchoredJoint2D joint)
-        {
-            switch (joint)
-            {
-                case DistanceJoint2D d:
-                    return d.distance;
-                case SpringJoint2D d:
-                    return d.distance;
-                default:
-                    Debug.LogError("SoftBody::SetJointDistance: The Joint type is not supported");
-                    return 0f;
-            }
         }
     }
 }

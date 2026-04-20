@@ -38,7 +38,7 @@ namespace SoftBodyControllers
             for (int i = 0; i < _numberOfVertices; ++i)
             {
                 _points[i] = new GameObject($"Point {i}", new Type[]{typeof(CircleCollider2D), typeof(Rigidbody2D), 
-                    typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(DistanceJoint2D), typeof(DistanceJoint2D)});
+                    typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D)});
     
                 _points[i].gameObject.tag = "Player";
                 
@@ -58,20 +58,13 @@ namespace SoftBodyControllers
             {
                 GameObject prev = _points[(i - 1 + _numberOfVertices) % _numberOfVertices];
                 GameObject next = _points[(i + 1) % _numberOfVertices];
+                GameObject prev2 = _points[(i - 2 + _numberOfVertices) % _numberOfVertices];
+                GameObject next2 = _points[(i + 2) % _numberOfVertices];
                 SpringJoint2D[] Springs = _points[i].GetComponents<SpringJoint2D>();
                 Springs[0].connectedBody = prev.GetComponent<Rigidbody2D>();
                 Springs[1].connectedBody = next.GetComponent<Rigidbody2D>();
-                Springs[0].autoConfigureDistance = false;
-                Springs[1].autoConfigureDistance = false;
-                
-    
-                GameObject prev2 = _points[(i - 2 + _numberOfVertices) % _numberOfVertices];
-                GameObject next2 = _points[(i + 2) % _numberOfVertices];
-                DistanceJoint2D[] DistanceJoints = _points[i].GetComponents<DistanceJoint2D>();
-                DistanceJoints[0].connectedBody = prev2.GetComponent<Rigidbody2D>();
-                DistanceJoints[1].connectedBody = next2.GetComponent<Rigidbody2D>();
-                DistanceJoints[0].autoConfigureDistance = false;
-                DistanceJoints[1].autoConfigureDistance = false;
+                Springs[2].connectedBody = prev2.GetComponent<Rigidbody2D>();
+                Springs[3].connectedBody = next2.GetComponent<Rigidbody2D>();
                 
                 float[] distances = new float[4];
                 distances[0] = Vector2.Distance(_points[i].transform.position, prev.transform.position);
@@ -79,12 +72,12 @@ namespace SoftBodyControllers
                 distances[2] = Vector2.Distance(_points[i].transform.position, prev2.transform.position);
                 distances[3] = Vector2.Distance(_points[i].transform.position, next2.transform.position);
                 
-                // Apply distances to joints
-                for (int j = 0; j < 2; ++j)
+                // Apply distances to springJoints
+                for (int j = 0; j < Springs.Length; ++j)
                 {
+                    Springs[j].autoConfigureDistance = false;
                     Springs[j].distance = distances[j];
                     Springs[j].frequency = _springFrequency;
-                    DistanceJoints[j].distance = distances[j + 2];
                 }
             }
         }
