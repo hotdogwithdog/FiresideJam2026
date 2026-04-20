@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using SoftBodyControllers;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,10 +16,13 @@ namespace Player
         private Rigidbody2D[] _points;
         private Vector2 _movementDirection;
         
+        public bool goUp = true;
+        
         void Start()
         {
             Inputs.InputReader.Instance.onMove += OnMove;
             Inputs.InputReader.Instance.onJump += OnJump;
+            Inputs.InputReader.Instance.onInteract += OnInteract;
             _movementDirection = Vector2.zero;
             
             Rigidbody2D[] points = GetComponentsInChildren<Rigidbody2D>();
@@ -28,7 +32,14 @@ namespace Player
                 _points[i] = points[i];
             }
         }
-        
+
+        private void OnInteract()
+        {
+            SlimeSoftBodyController slime = GetComponent<SlimeSoftBodyController>();
+            
+            slime.SetScale(slime.Scale + (goUp? 0.1f : -0.1f));
+        }
+
         private void FixedUpdate()
         {
             foreach (Rigidbody2D point in _points)
