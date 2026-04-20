@@ -14,6 +14,8 @@ namespace Inputs
         public Action<Vector2> onMove = delegate { };
         public Action onJump = delegate { };
 
+        public Action onInteract = delegate { };
+
         #endregion
         
         #region ActivatesAndDisables
@@ -79,7 +81,7 @@ namespace Inputs
 
         public void OnInteract(InputAction.CallbackContext context)
         {
-            Debug.Log("Interact");
+            if (context.phase == InputActionPhase.Performed) onInteract.Invoke();
         }
 
         public void OnJump(InputAction.CallbackContext context)
