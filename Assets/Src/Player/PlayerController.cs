@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, MassInteraction.IMass
     {
         [SerializeField] private float _jumpForce = 5f;
         [SerializeField] private float _movementForce = 2f;
@@ -12,7 +12,10 @@ namespace Player
 
         private SlimeSoftBodyController _playerSoftBodyController;
         private Vector2 _movementDirection;
+
+        private float _mass = 100f;
         
+        // TODO: Remove this is just for testing the scale changes
         public bool goUp = true;
         
         void Start()
@@ -48,6 +51,11 @@ namespace Player
         private void OnMove(Vector2 Direction)
         {
             _movementDirection = Direction;
+        }
+
+        public float GetMass()
+        {
+            return _mass;
         }
     }
 }
