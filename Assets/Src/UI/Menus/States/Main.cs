@@ -1,20 +1,26 @@
 ﻿namespace UI.Menus.States
 {
-    public class Main: IState
+    public class Main: AMenuState
     {
-        public void Enter()
+        public Main() : base("Menus/MainMenu"){ }
+        protected override void OnOptionsClicked(NavigationActions action)
         {
-            throw new System.NotImplementedException();
+            switch (action)
+            {
+                case NavigationActions.Play:
+                    MenuManager.Instance.SetState(new Play());
+                    break;
+                case NavigationActions.Options:
+                    MenuManager.Instance.SetState(new Options(true));
+                    break;
+                case NavigationActions.Credits:
+                    MenuManager.Instance.SetState(new Credits());
+                    break;
+            }
         }
 
-        public void Exit()
+        public override void Update(float deltaTime)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void Update(float deltaTime)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

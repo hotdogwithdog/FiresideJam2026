@@ -7,8 +7,6 @@ namespace UI.Menus
     public class MenuManager: Utilities.Singleton<MenuManager>
     {
         private IState _currentState;
-
-
         private void Start()
         {
             SetState(new Main());
