@@ -1,13 +1,13 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
+using System;
 
 namespace SoftBodyControllers
 {
-    public class SlimeSoftBodyController : SoftBody
+    public class MassBallSoftBodyController : SoftBody
     {
         [Header("Generation Configuration")]
-        [SerializeField] private int _numberOfVertices = 16;
-        [SerializeField] private float _radius = 2f;
+        [SerializeField] private int _numberOfVertices = 6;
+        [SerializeField] private float _radius = 1f;
         [SerializeField] private float _pointRadius = 0.25f;
         [SerializeField] private float _pointMass = 0.1f;
         [SerializeField] private float _springFrequency = 5f;
@@ -23,10 +23,10 @@ namespace SoftBodyControllers
         {
             if (IsBakingValid())
             {
-                Debug.Log("SlimeSoftBodyController::CreatePoints: Using the baked points");
+                Debug.Log("MassBallSoftBodyController::CreatePoints: Using the baked points");
                 return;
             }
-            Debug.Log("SlimeSoftBodyController::CreatePoints: Generating points");
+            Debug.Log("MassBallSoftBodyController::CreatePoints: Generating points");
             BakeValues();
             
             // Actual Start of the generation xd
@@ -38,9 +38,9 @@ namespace SoftBodyControllers
             for (int i = 0; i < _numberOfVertices; ++i)
             {
                 _points[i] = new GameObject($"Point {i}", new Type[]{typeof(CircleCollider2D), typeof(Rigidbody2D), 
-                    typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SoftBodyCollisionRelay)});
+                    typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SoftBodyCollisionRelay)});
     
-                _points[i].gameObject.tag = "Player";
+                _points[i].gameObject.tag = "MassBall";
                 
                 Rigidbody2D pointRb = _points[i].GetComponent<Rigidbody2D>();
                 pointRb.mass = _pointMass;
@@ -58,19 +58,13 @@ namespace SoftBodyControllers
             {
                 GameObject prev = _points[(i - 1 + _numberOfVertices) % _numberOfVertices];
                 GameObject next = _points[(i + 1) % _numberOfVertices];
-                GameObject prev2 = _points[(i - 2 + _numberOfVertices) % _numberOfVertices];
-                GameObject next2 = _points[(i + 2) % _numberOfVertices];
                 SpringJoint2D[] Springs = _points[i].GetComponents<SpringJoint2D>();
                 Springs[0].connectedBody = prev.GetComponent<Rigidbody2D>();
                 Springs[1].connectedBody = next.GetComponent<Rigidbody2D>();
-                Springs[2].connectedBody = prev2.GetComponent<Rigidbody2D>();
-                Springs[3].connectedBody = next2.GetComponent<Rigidbody2D>();
                 
-                float[] distances = new float[4];
+                float[] distances = new float[Springs.Length];
                 distances[0] = Vector2.Distance(_points[i].transform.position, prev.transform.position);
                 distances[1] = Vector2.Distance(_points[i].transform.position, next.transform.position);
-                distances[2] = Vector2.Distance(_points[i].transform.position, prev2.transform.position);
-                distances[3] = Vector2.Distance(_points[i].transform.position, next2.transform.position);
                 
                 // Apply distances to springJoints
                 for (int j = 0; j < Springs.Length; ++j)

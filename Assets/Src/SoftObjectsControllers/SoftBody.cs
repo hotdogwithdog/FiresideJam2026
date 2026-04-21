@@ -47,7 +47,9 @@ namespace SoftBodyControllers
         protected float _targetAreaBase;
         protected float _targetArea;
 
-        #region PublicMethods
+        #region PublicInterface
+        
+        public Action<MassInteraction.IMass> OnSoftBodyCollisionEnter;
 
         public void AddForce(Vector2 force, float scaleForFarPoints, ForceMode2D forceMode)
         {
@@ -257,6 +259,30 @@ namespace SoftBodyControllers
             }
 
             return sum / _points.Length;
+        }
+        
+        protected void ClearPointsObjects()
+        {
+            if (_points != null)
+            {
+                for (int i = 0; i < _points.Length; ++i)
+                {
+                    #if UNITY_EDITOR
+                        DestroyImmediate(_points[i]);
+                    #else
+                        Destroy(_points[i]);
+                    #endif
+                }
+            }
+            _points = null;
+        }
+
+        private void OnDestroy()
+        {
+            if (_points != null)
+            {
+                ClearPointsObjects();
+            }
         }
     }
 }
