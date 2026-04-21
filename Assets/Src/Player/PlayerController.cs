@@ -1,21 +1,21 @@
-using System;
-using System.Collections.Generic;
 using SoftBodyControllers;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player
 {
-    public class BasicPlayerMovement : MonoBehaviour
+    public class PlayerController : MonoBehaviour, MassInteraction.IMass
     {
         [SerializeField] private float _jumpForce = 5f;
         [SerializeField] private float _movementForce = 2f;
 
         [SerializeField] private Transform _playerAnchor; // Center of the slime
 
-        private Rigidbody2D[] _points;
+        private SlimeSoftBodyController _playerSoftBodyController;
         private Vector2 _movementDirection;
+
+        private float _mass = 100f;
         
+        // TODO: Remove this is just for testing the scale changes
         public bool goUp = true;
         
         void Start()
@@ -24,45 +24,38 @@ namespace Player
             Inputs.InputReader.Instance.onJump += OnJump;
             Inputs.InputReader.Instance.onInteract += OnInteract;
             _movementDirection = Vector2.zero;
-            
-            Rigidbody2D[] points = GetComponentsInChildren<Rigidbody2D>();
-            _points = new Rigidbody2D[points.Length]; // Discard the center point
-            for (int i = 0; i < points.Length; ++i)
-            {
-                _points[i] = points[i];
-            }
+
+            _playerSoftBodyController = GetComponent<SlimeSoftBodyController>();
         }
 
         private void OnInteract()
         {
-            SlimeSoftBodyController slime = GetComponent<SlimeSoftBodyController>();
-            
-            slime.SetScale(slime.Scale + (goUp? 0.1f : -0.1f));
+            _playerSoftBodyController.SetScale(_playerSoftBodyController.Scale + (goUp? 0.1f : -0.1f));
         }
 
         private void FixedUpdate()
         {
-            foreach (Rigidbody2D point in _points)
+            foreach (GameObject point in _playerSoftBodyController.Points)
             {
                 float weight = Mathf.Clamp01(1f - (point.transform.position.y - _playerAnchor.position.y));
-                point.AddForce(_movementDirection * (_movementForce * weight));
+                point.GetComponent<Rigidbody2D>().AddForce(_movementDirection * (_movementForce * weight));
             }
         }
 
         private void OnJump()
         {
             // TODO: Make the jump just available if is on ground (must check the other nodes this script is set to the center point of the mass-spring system
-            foreach (Rigidbody2D point in _points)
-            {
-                if (point.transform.position.y < _playerAnchor.position.y)
-                    point.AddForceY(_jumpForce, ForceMode2D.Impulse);
-                else point.AddForceY(_jumpForce/2f, ForceMode2D.Impulse);
-            }
+            _playerSoftBodyController.AddForce(Vector2.up * _jumpForce, 0.5f, ForceMode2D.Impulse);
         }
 
         private void OnMove(Vector2 Direction)
         {
             _movementDirection = Direction;
+        }
+
+        public float GetMass()
+        {
+            return _mass;
         }
     }
 }
