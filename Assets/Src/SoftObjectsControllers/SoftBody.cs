@@ -38,14 +38,50 @@ namespace SoftBodyControllers
         [SerializeField] protected float _scale = 1f;
         
         public float Scale {get { return _scale; }}
+        public GameObject[] Points { get { return _points; } }
 
 
-        [HideInInspector] [SerializeField] protected List<PointJointsDistances> _pointJointsDistances;
-        [HideInInspector] [SerializeField] protected float[] _pointsColliderRaiusBase;
+        protected List<PointJointsDistances> _pointJointsDistances;
+        protected float[] _pointsColliderRaiusBase;
 
-        [SerializeField] protected float _targetAreaBase;
-        [SerializeField] protected float _targetArea;
+        protected float _targetAreaBase;
+        protected float _targetArea;
 
+        #region PublicMethods
+
+        public void AddForce(Vector2 force, float scaleForFarPoints, ForceMode2D forceMode)
+        {
+            if (force == Vector2.zero)
+            {
+                Debug.LogWarning("SoftBody::AddForce: force is (0, 0)");
+                return;
+            }
+            
+            Vector2 forceNormal = new Vector2(force.y, -force.x); // Clock-wise perpendicular vector
+            float angle = -MathF.Atan2(forceNormal.y, forceNormal.x); // Angle between the normal and the right vector in radians (swap the direction in preparation to the rotation that is counterclock-wise
+            Vector2 rotatedAnchor = Utilities.Maths.Rotate2D(angle, _anchor.transform.position);
+            float a = force.magnitude;
+            float b = 0f;
+            foreach (GameObject point in _points)
+            {
+                Rigidbody2D rb = point.GetComponent<Rigidbody2D>();
+
+                if (Utilities.Maths.Rotate2D(angle, point.transform.position).y < rotatedAnchor.y)
+                {
+                    rb.AddForce(force, forceMode);
+                    b += a;
+                }
+                else
+                {
+                    rb.AddForce(force * scaleForFarPoints, forceMode);
+                    b += a * 0.5f;
+                }
+
+            }
+            Debug.Log($"Total Force = {b}");
+        }
+        #endregion
+        
         private void Awake()
         {
             CreatePoints(); // Just if the child overrides the function it will do anything
