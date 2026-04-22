@@ -15,7 +15,7 @@ namespace Player
         private SlimeSoftBodyController _playerSoftBodyController;
         private Vector2 _movementDirection;
 
-        private float _mass = 100f;
+        [Header("Mass amount")][SerializeField] private float _mass = 100f;
         private float _maxVisualScale = 2f;
         
         // TODO: Remove this is just for testing the scale changes
