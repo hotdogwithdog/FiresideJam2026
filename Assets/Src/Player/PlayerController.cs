@@ -12,7 +12,11 @@ namespace Player
 
         [SerializeField] private Transform _playerAnchor; // Center of the slime
 
-        private SlimeSoftBodyController _playerSoftBodyController;
+        [SerializeField] private GameObject _massBallPrefab;
+        [SerializeField] private float _throwForce = 2f;
+        [SerializeField] private float _timeOfIgnoreCollisionsWithThrowMass = 0.2f;
+
+        private SlimeSoftBodyController _playerSoftBody;
         private Vector2 _movementDirection;
 
         [SerializeField] private float _mass = 100f;
@@ -20,17 +24,17 @@ namespace Player
         
         // TODO: Remove this is just for testing the scale changes
         public bool goUp = true;
-
-        void Start()
+        
+        private void Start()
         {
             Inputs.InputReader.Instance.onMove += OnMove;
             Inputs.InputReader.Instance.onJump += OnJump;
-            Inputs.InputReader.Instance.onInteract += OnInteract;
+            Inputs.InputReader.Instance.onShootMass += OnShootMass;
             _movementDirection = Vector2.zero;
 
-            _playerSoftBodyController = GetComponent<SlimeSoftBodyController>();
-            _playerSoftBodyController.OnSoftBodyCollisionEnter += OnSoftBodyCollision;
-            _playerSoftBodyController.SetScale(Utilities.Maths.GetScaleFromMass(_mass));
+            _playerSoftBody = GetComponent<SlimeSoftBodyController>();
+            _playerSoftBody.OnSoftBodyCollisionEnter += OnSoftBodyCollision;
+            _playerSoftBody.SetScale(Utilities.Maths.GetScaleFromMass(_mass));
         }
 
         private void OnSoftBodyCollision(IMass otherMass)
@@ -39,14 +43,23 @@ namespace Player
             MassAbsortionManager.OnCollisionOfMass(this, otherMass);
         }
 
-        private void OnInteract()
+        private void OnShootMass(Vector2 mousePositionInScreenSpace)
         {
+            Vector3 mousePosWorldSpace = Camera.main.ScreenToWorldPoint(mousePositionInScreenSpace);
+            Vector3 throwDirection = (mousePosWorldSpace - _playerAnchor.position).normalized;
             
+            GameObject massBallGameObject = Instantiate(_massBallPrefab);
+            massBallGameObject.transform.position = _playerAnchor.position + throwDirection * 3f;
+
+            MassBall massBall = massBallGameObject.GetComponent<MassBall>();
+            
+            ReduceMass(massBall.GetMass());
+            massBall.Throw(throwDirection * _throwForce, _playerSoftBody, _timeOfIgnoreCollisionsWithThrowMass);
         }
 
         private void FixedUpdate()
         {
-            foreach (GameObject point in _playerSoftBodyController.Points)
+            foreach (GameObject point in _playerSoftBody.Points)
             {
                 float weight = Mathf.Clamp01(1f - (point.transform.position.y - _playerAnchor.position.y));
                 point.GetComponent<Rigidbody2D>().AddForce(_movementDirection * (_movementForce * weight));
@@ -56,7 +69,7 @@ namespace Player
         private void OnJump()
         {
             // TODO: Make the jump just available if is on ground (must check the other nodes this script is set to the center point of the mass-spring system
-            _playerSoftBodyController.AddForce(Vector2.up * _jumpForce, 0.5f, ForceMode2D.Impulse);
+            _playerSoftBody.AddForce(Vector2.up * _jumpForce, 0.5f, ForceMode2D.Impulse);
         }
 
         private void OnMove(Vector2 Direction)
@@ -76,18 +89,22 @@ namespace Player
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
-            _playerSoftBodyController.SetScale(targetScale);
+            _playerSoftBody.SetScale(targetScale);
         }
 
         public void BeAbsorbed() { }
+        public bool IsBeingAbsorbed() { return false; }
+        
         public void ReduceMass(float amount)
         {
-            _mass -= MathF.Max(0, _mass - amount);
+            _mass = MathF.Max(0, _mass - amount);
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
-            _playerSoftBodyController.SetScale(targetScale);
+            _playerSoftBody.SetScale(targetScale);
         }
+
+        
 
         public GameObject GetGameObject()
         {

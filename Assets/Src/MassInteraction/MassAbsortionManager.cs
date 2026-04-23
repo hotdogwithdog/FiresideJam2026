@@ -19,20 +19,22 @@ namespace MassInteraction
                 return;
             }
 
-            bool bAAbsorbsB;
             if (massA.GetGameObject().tag == "Player")
             {
-                bAAbsorbsB = true;
+                massA.AbsorbMass(massB);
+                massB.BeAbsorbed();
+                return;
             }
             else if (massB.GetGameObject().tag == "Player")
             {
-                bAAbsorbsB = false;
+                massB.AbsorbMass(massA);
+                massA.BeAbsorbed();
+                return;
             }
-            else
-            {
-                bAAbsorbsB = massA.GetMass() > massB.GetMass(); // The mass with more mass absorbs except one of the mass are the player that has priority
-            }
-
+            
+            if (massA.IsBeingAbsorbed() || massB.IsBeingAbsorbed()) return; // Go out if one of them or both are being absorbing (means one previous call to this method)
+            
+            bool bAAbsorbsB = massA.GetMass() > massB.GetMass(); // The mass with more mass absorbs except one of the mass are the player that has priority
             if (bAAbsorbsB)
             {
                 massA.AbsorbMass(massB);

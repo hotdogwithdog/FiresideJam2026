@@ -10,6 +10,8 @@ namespace MassInteraction
         public void BeAbsorbed();
 
         public void ReduceMass(float amount);
+
+        public bool IsBeingAbsorbed();
         
         public UnityEngine.GameObject GetGameObject();
     }

@@ -12,7 +12,6 @@ namespace SoftBodyControllers
             IMass myMass = this.gameObject.GetComponentInParent<IMass>();
             if (otherMass == null || myMass == null || otherMass == myMass)
             {
-                Debug.Log("SoftBodyCollisionRelay::OnCollisionEnter2D: Collision rejected to pass forward for be the same object or invalid ones");
                 return;
             }
             

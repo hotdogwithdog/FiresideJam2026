@@ -5,6 +5,7 @@ using UnityEngine.U2D;
 
 namespace SoftBodyControllers
 {
+    [RequireComponent(typeof(SpriteShapeController))]
     public class SoftBody : MonoBehaviour
     {
         protected struct PointJointsDistances
@@ -30,7 +31,6 @@ namespace SoftBodyControllers
 
         [Header("Spring-Mass system")]
         // The original points that this has no matters, just the configuration of the component and his profile
-        [SerializeField]
         protected SpriteShapeController _spriteShapeController;
 
         // If you are in a child object that generates the points on fly this is not mean to fill it in editor, if not they are nodes of the softbody (they must have rigidBody2D)
@@ -84,13 +84,14 @@ namespace SoftBodyControllers
         }
         #endregion
         
-        private void Awake()
+        protected void Awake()
         {
+            _spriteShapeController = GetComponent<SpriteShapeController>();
             CreatePoints(); // Just if the child overrides the function it will do anything
             InitPointJointsDistances();
             _targetAreaBase = CalculateArea();
             _targetArea = _targetAreaBase;
-            SetScale(_scale, true);
+            //SetScale(_scale, true);
             MatchPointsOfSpriteShape();
             UpdateSpline();
         }
@@ -210,8 +211,8 @@ namespace SoftBodyControllers
 
         private void UpdateSpline()
         {
-            Vector2 center = GetCenter();
-            _anchor.position = center;
+            Vector2 center = GetCenter(false);
+            _anchor.position = GetCenter(true);
             for (int i = 0; i < _points.Length; ++i)
             {
                 Vector2 vertex = _points[i].transform.localPosition;
@@ -249,13 +250,15 @@ namespace SoftBodyControllers
             }
         }
 
-        private Vector2 GetCenter()
+        private Vector2 GetCenter(bool isGlobalSpace)
         {
             Vector2 sum = Vector2.zero;
 
             for (int i = 0; i < _points.Length; ++i)
             {
-                sum += (Vector2)_points[i].transform.position;
+                if (isGlobalSpace)
+                    sum += (Vector2)_points[i].transform.position;
+                else sum += (Vector2)_points[i].transform.localPosition;
             }
 
             return sum / _points.Length;
