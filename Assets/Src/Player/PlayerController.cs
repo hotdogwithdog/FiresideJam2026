@@ -22,9 +22,6 @@ namespace Player
         [SerializeField] private float _mass = 100f;
         [SerializeField] private float _maxMass = 200f;
         
-        // TODO: Remove this is just for testing the scale changes
-        public bool goUp = true;
-        
         private void Start()
         {
             Inputs.InputReader.Instance.onMove += OnMove;

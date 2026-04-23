@@ -12,8 +12,6 @@ namespace MassInteraction
 
         [SerializeField] private float _timeOfAbsortion = 0.5f;
 
-        [SerializeField] private float _timeForIgnorePlayerWhenThrow;
-
         private bool _isBeingAbsorbed = false;
         
 
