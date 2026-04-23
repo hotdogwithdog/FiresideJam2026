@@ -8,7 +8,6 @@ namespace MassInteraction
     public class MassBall : MonoBehaviour, IMass
     {
         [SerializeField] private float _mass = 5f;
-        [SerializeField] private float _maxVisualScale = 3f;
 
         [SerializeField] private float _timeOfAbsortion = 0.5f;
         
@@ -18,6 +17,7 @@ namespace MassInteraction
         {
             _softBody = GetComponent<SoftBody>();
             _softBody.OnSoftBodyCollisionEnter += OnCollision;
+            _softBody.SetScale(Utilities.Maths.GetScaleFromMass(_mass));
         }
 
         private void OnCollision(IMass otherMass)
@@ -35,9 +35,7 @@ namespace MassInteraction
         {
             _mass += other.GetMass();
             
-            Debug.Log($"MassBall::AbsorbMass: new Mass {_mass}");
-            
-            float targetScale = MathF.Min(_maxVisualScale, MathF.Sqrt(_mass));
+            float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
             _softBody.SetScale(targetScale);
         }
@@ -46,6 +44,15 @@ namespace MassInteraction
         {
             Debug.Log("MassBall::BeAbsorbed: Reached absorbing");
             Destroy(_softBody.gameObject);
+        }
+
+        public void ReduceMass(float amount)
+        {
+            _mass = MathF.Max(0f, amount);
+            
+            float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
+            
+            _softBody.SetScale(targetScale);
         }
 
         public GameObject GetGameObject()

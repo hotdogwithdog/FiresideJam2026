@@ -15,8 +15,8 @@ namespace Player
         private SlimeSoftBodyController _playerSoftBodyController;
         private Vector2 _movementDirection;
 
-        private float _mass = 100f;
-        private float _maxVisualScale = 2f;
+        [SerializeField] private float _mass = 100f;
+        [SerializeField] private float _maxMass = 200f;
         
         // TODO: Remove this is just for testing the scale changes
         public bool goUp = true;
@@ -30,6 +30,7 @@ namespace Player
 
             _playerSoftBodyController = GetComponent<SlimeSoftBodyController>();
             _playerSoftBodyController.OnSoftBodyCollisionEnter += OnSoftBodyCollision;
+            _playerSoftBodyController.SetScale(Utilities.Maths.GetScaleFromMass(_mass));
         }
 
         private void OnSoftBodyCollision(IMass otherMass)
@@ -40,7 +41,7 @@ namespace Player
 
         private void OnInteract()
         {
-            _playerSoftBodyController.SetScale(_playerSoftBodyController.Scale + (goUp? 0.1f : -0.1f));
+            
         }
 
         private void FixedUpdate()
@@ -71,16 +72,23 @@ namespace Player
 
         public void AbsorbMass(IMass other)
         {
-            _mass += other.GetMass();
+            _mass = MathF.Min(_maxMass, _mass + other.GetMass());
             
-            Debug.Log($"MassBall::AbsorbMass: new Mass {_mass}");
-            
-            float targetScale = MathF.Min(_maxVisualScale, MathF.Sqrt(_mass));
+            float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
             _playerSoftBodyController.SetScale(targetScale);
         }
 
         public void BeAbsorbed() { }
+        public void ReduceMass(float amount)
+        {
+            _mass -= MathF.Max(0, _mass - amount);
+            
+            float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
+            
+            _playerSoftBodyController.SetScale(targetScale);
+        }
+
         public GameObject GetGameObject()
         {
             return gameObject;
