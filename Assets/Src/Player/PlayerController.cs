@@ -13,7 +13,6 @@ namespace Player
         [SerializeField] private LayerMask _groundMask;
         
         [SerializeField] private Transform _playerAnchor; // Center of the slime
-
         
         private SlimeSoftBodyController _playerSoftBody;
         private Vector2 _movementDirection;
@@ -27,6 +26,14 @@ namespace Player
         [SerializeField] private float _throwMassCantity = 5f;
         [SerializeField] private float _throwForce = 2f;
         [SerializeField] private float _timeOfIgnoreCollisionsWithThrowMass = 0.2f;
+        
+        #region publicInterface
+        
+        public Action<float> onMassChanged;
+        public float MaxMass => _maxMass;
+        
+        
+        #endregion
 
         private void Start()
         {
@@ -37,6 +44,7 @@ namespace Player
 
             _playerSoftBody = GetComponent<SlimeSoftBodyController>();
             _playerSoftBody.SetScale(Utilities.Maths.GetScaleFromMass(_mass));
+            onMassChanged?.Invoke(_mass); // For the first set (the UI must be on the Awake to hear this)
         }
 
         private void OnShootMass(Vector2 mousePositionInScreenSpace)
@@ -91,6 +99,7 @@ namespace Player
         {
             Debug.Log("Player absorb");
             _mass = MathF.Min(_maxMass, _mass + other.GetMass());
+            onMassChanged?.Invoke(_mass);
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
@@ -103,6 +112,7 @@ namespace Player
         public void ReduceMass(float amount)
         {
             _mass = MathF.Max(0, _mass - amount);
+            onMassChanged?.Invoke(_mass);
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
