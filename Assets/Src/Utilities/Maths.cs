@@ -15,5 +15,15 @@ namespace Utilities
         {
             return new Vector2(MathF.Cos(angle) * point.x - MathF.Sin(angle) * point.y, MathF.Sin(angle) * point.x + MathF.Cos(angle) * point.y);
         }
+
+        /// <summary>
+        /// The scale is set to be 0.3 with 0 of mass and linearly go to 2.3 scale with 200 mass (is the linear function so no clamped)
+        /// </summary>
+        /// <param name="mass"></param>
+        /// <returns></returns>
+        public static float GetScaleFromMass(float mass)
+        {
+            return mass * 0.01f + 0.3f;
+        }
     }
 }

@@ -38,7 +38,7 @@ namespace SoftBodyControllers
             for (int i = 0; i < _numberOfVertices; ++i)
             {
                 _points[i] = new GameObject($"Point {i}", new Type[]{typeof(CircleCollider2D), typeof(Rigidbody2D), 
-                    typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SoftBodyCollisionRelay)});
+                    typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D), typeof(SpringJoint2D)});
     
                 _points[i].gameObject.tag = "Player";
                 
@@ -49,7 +49,7 @@ namespace SoftBodyControllers
                 
                 _points[i].GetComponent<CircleCollider2D>().radius = _pointRadius;
                 _points[i].transform.SetParent(this.transform);
-                _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f).normalized * _radius;
+                _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f) * _radius;
                 
                 t += interval;
             }

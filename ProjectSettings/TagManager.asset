@@ -7,11 +7,12 @@ TagManager:
   - PressurePlate
   - Catapult
   - MassBall
+  - Canvas
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
