@@ -1,10 +1,13 @@
 using System;
+using Enviorenment;
+using MassInteraction;
 using UnityEngine;
 
-public class Fan : MonoBehaviour, IActivable
+public class Fan : ASoftBodyInteract, IActivable
 {
+    
+    [SerializeField] private float _massToReduce = 0.5f;
     [SerializeField] private float _fanForce = 3f;
-    private GameObject _player;
     
     [SerializeField] private bool _isActivated = true;
     private void OnTriggerStay2D(Collider2D other)
@@ -13,8 +16,7 @@ public class Fan : MonoBehaviour, IActivable
         
         if (other.CompareTag("Player"))
         {
-            _player = other.gameObject;
-            PushPlayer();
+            PushPlayer(other.gameObject);
         }
     }
 
@@ -23,10 +25,10 @@ public class Fan : MonoBehaviour, IActivable
         _isActivated = true;
     }
 
-    private void PushPlayer()
+    private void PushPlayer(GameObject softBody)
     {
-        Vector2 direction = _player.transform.position - transform.position;
-        _player.GetComponent<Rigidbody2D>().AddForce(direction.normalized * _fanForce, ForceMode2D.Force);
+        Vector2 direction = softBody.transform.position - transform.position;
+        softBody.GetComponent<Rigidbody2D>().AddForce(direction.normalized * _fanForce, ForceMode2D.Force);
     }
 
     public void DeActivate()
@@ -38,4 +40,13 @@ public class Fan : MonoBehaviour, IActivable
     {
         _isActivated = !_isActivated;
     }
+
+    protected override void OnSoftBodyEntered(IMass softBodyMass) { }
+
+    protected override void OnSoftBodyStay(IMass softBodyMass)
+    {
+        softBodyMass.ReduceMass(_massToReduce);
+    }
+
+    protected override void OnSoftBodyExit(IMass softBodyMass) { }
 }

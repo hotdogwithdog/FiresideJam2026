@@ -27,7 +27,7 @@ public class Catapult : MonoBehaviour, IActivable
         _motor = _hinge.motor;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other) //TODO: onexit limpiar contador de bolas
     {
         if (!other.collider.CompareTag("Player")) return;
 

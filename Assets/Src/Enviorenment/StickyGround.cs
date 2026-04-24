@@ -1,18 +1,19 @@
 using System;
+using Enviorenment;
 using MassInteraction;
 using UnityEngine;
 
-public class StickyGround : MonoBehaviour
+public class StickyGround : ASoftBodyInteract
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    [SerializeField] private float _massToReduce = 0.5f;
+
+
+    protected override void OnSoftBodyEntered(IMass softBodyMass) { }
+
+    protected override void OnSoftBodyStay(IMass softBodyMass)
     {
+        softBodyMass.ReduceMass(_massToReduce);
     }
 
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.collider.CompareTag("Player"))
-        {
-            other.gameObject.GetComponentInParent<IMass>().Red
-        }
-    }
+    protected override void OnSoftBodyExit(IMass softBodyMass) { }
 }
