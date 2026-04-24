@@ -120,20 +120,18 @@ namespace Inputs.Generated
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Respawn"",
+                    ""type"": ""Button"",
+                    ""id"": ""375c376d-262f-44a5-be1c-2a243bcd0478"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""978bfe49-cc26-4a3d-ab7b-7d7a29327403"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": ""WASD"",
                     ""id"": ""00ca640b-d935-4593-8157-c05846ea39b3"",
@@ -246,17 +244,6 @@ namespace Inputs.Generated
                 },
                 {
                     ""name"": """",
-                    ""id"": ""3ea4d645-4504-4529-b061-ab81934c3752"",
-                    ""path"": ""<Joystick>/stick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""eb40bb66-4559-4dfa-9a2f-820438abb426"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
@@ -268,30 +255,8 @@ namespace Inputs.Generated
                 },
                 {
                     ""name"": """",
-                    ""id"": ""daba33a1-ad0c-4742-a909-43ad1cdfbeb6"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""603f3daf-40bd-4854-8724-93e8017f59e3"",
-                    ""path"": ""<XRController>/secondaryButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""XR"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""1c04ea5f-b012-41d1-a6f7-02e963b52893"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -301,12 +266,12 @@ namespace Inputs.Generated
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b3f66d0b-7751-423f-908b-a11c5bd95930"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""id"": ""1b8fdf49-20d7-4b11-9772-fb4be9cc75f0"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""ShootMass"",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Respawn"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -897,6 +862,7 @@ namespace Inputs.Generated
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_ShootMass = m_Player.FindAction("ShootMass", throwIfNotFound: true);
             m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+            m_Player_Respawn = m_Player.FindAction("Respawn", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -993,6 +959,7 @@ namespace Inputs.Generated
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_ShootMass;
         private readonly InputAction m_Player_Jump;
+        private readonly InputAction m_Player_Respawn;
         /// <summary>
         /// Provides access to input actions defined in input action map "Player".
         /// </summary>
@@ -1016,6 +983,10 @@ namespace Inputs.Generated
             /// Provides access to the underlying input action "Player/Jump".
             /// </summary>
             public InputAction @Jump => m_Wrapper.m_Player_Jump;
+            /// <summary>
+            /// Provides access to the underlying input action "Player/Respawn".
+            /// </summary>
+            public InputAction @Respawn => m_Wrapper.m_Player_Respawn;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -1051,6 +1022,9 @@ namespace Inputs.Generated
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Respawn.started += instance.OnRespawn;
+                @Respawn.performed += instance.OnRespawn;
+                @Respawn.canceled += instance.OnRespawn;
             }
 
             /// <summary>
@@ -1071,6 +1045,9 @@ namespace Inputs.Generated
                 @Jump.started -= instance.OnJump;
                 @Jump.performed -= instance.OnJump;
                 @Jump.canceled -= instance.OnJump;
+                @Respawn.started -= instance.OnRespawn;
+                @Respawn.performed -= instance.OnRespawn;
+                @Respawn.canceled -= instance.OnRespawn;
             }
 
             /// <summary>
@@ -1392,6 +1369,13 @@ namespace Inputs.Generated
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnJump(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "Respawn" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnRespawn(InputAction.CallbackContext context);
         }
         /// <summary>
         /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

@@ -6,21 +6,24 @@ using UnityEngine;
 [RequireComponent(typeof(SpringJoint2D))]
 public class Checkpoint : MonoBehaviour, IActivable // Checkpoint is IActivable because it could activate other go
 {
-    [Header("Mass")] 
-    [SerializeField] private float massCheck = 70f;
+    [Header("Checkpoint Config")] 
+    [SerializeField] private int _index;
+    [SerializeField] private float _massCheck = 70f;
+    [SerializeField] private Transform _spawnPoint; // 
     
     [Header("Spring config")]
     [SerializeField] private float _animationTime = 1f;
     [SerializeField] private float _minSpringDistance = 0.1f;
+
+    private PlayerController _playerController;
     
-    [SerializeField] private Vector2 _spawnOffset = new Vector2(0, 3);
-    private bool _isActivated;
+    private bool _isActivated = false;
     private SpringJoint2D _springJoint2D;
     private float massDistanceRelation;
     private float springDistanceToMove;
     private float _defaultSpringDistance;
     
-    private int _playerColliderCount;
+    private int _playerColliderCount = 0;
     private IActivable[] _activables;
     
     private void Awake()
@@ -31,20 +34,19 @@ public class Checkpoint : MonoBehaviour, IActivable // Checkpoint is IActivable 
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") && !_isActivated && _playerColliderCount == 0)
+        if (!other.gameObject.CompareTag("Player")) return;
+        
+        if (_playerColliderCount == 0 && !_isActivated)
         {
-            massDistanceRelation = Mathf.Clamp01(other.gameObject.GetComponentInParent<PlayerController>().GetMass() / massCheck);
+            Debug.Log("Player collision");
+            _playerController =  other.gameObject.GetComponentInParent<PlayerController>();
+            massDistanceRelation = Mathf.Clamp01(_playerController.GetMass() / _massCheck);
             massDistanceRelation *= _defaultSpringDistance;
             massDistanceRelation = _defaultSpringDistance - massDistanceRelation;
             springDistanceToMove = Mathf.Max(_minSpringDistance, massDistanceRelation);
             Activate();
         }
         _playerColliderCount++;
-    }
-    
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        
     }
 
     private void OnCollisionExit2D(Collision2D other)
@@ -53,14 +55,17 @@ public class Checkpoint : MonoBehaviour, IActivable // Checkpoint is IActivable 
         
         _playerColliderCount--;
 
-        if (_playerColliderCount == 0) DeActivate();
+        if (_playerColliderCount == 0 && !_isActivated) DeActivate();
     }
 
     private void SetCheckpoint()
     {
         Debug.Log("SetCheckpoint");
-        Vector2 pos = new Vector2(transform.position.x, transform.position.y + _spawnOffset.y);
-        CheckpointManager.Instance.SetCheckpoint(pos);
+        CheckpointManager.CheckpointData data;
+        data.checkpointIndex = _index;
+        data.position = _spawnPoint.position;
+        data.mass = _playerController.GetMass();
+        CheckpointManager.Instance.SetCheckpoint(data);
         
         _isActivated = true;
     }

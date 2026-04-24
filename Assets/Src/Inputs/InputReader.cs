@@ -15,6 +15,7 @@ namespace Inputs
         public Action onJump = delegate { };
 
         public Action<Vector2> onShootMass = delegate { };
+        public Action onRespawnRequest = delegate { };
 
         #endregion
         
@@ -86,6 +87,12 @@ namespace Inputs
         {
             if (context.phase == InputActionPhase.Performed) onJump.Invoke();
         }
+
+        public void OnRespawn(InputAction.CallbackContext context)
+        {
+            if (context.phase == InputActionPhase.Performed) onRespawnRequest.Invoke();
+        }
+
         #endregion
     }
 }
