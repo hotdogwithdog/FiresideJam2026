@@ -1,3 +1,5 @@
+using System;
+using MassInteraction;
 using SoftBodyControllers;
 using UnityEngine;
 
@@ -13,11 +15,12 @@ namespace Player
         private SlimeSoftBodyController _playerSoftBodyController;
         private Vector2 _movementDirection;
 
-        private float _mass = 100f;
+        [Header("Mass amount")][SerializeField] private float _mass = 100f;
+        private float _maxVisualScale = 2f;
         
         // TODO: Remove this is just for testing the scale changes
         public bool goUp = true;
-        
+
         void Start()
         {
             Inputs.InputReader.Instance.onMove += OnMove;
@@ -26,6 +29,13 @@ namespace Player
             _movementDirection = Vector2.zero;
 
             _playerSoftBodyController = GetComponent<SlimeSoftBodyController>();
+            _playerSoftBodyController.OnSoftBodyCollisionEnter += OnSoftBodyCollision;
+        }
+
+        private void OnSoftBodyCollision(IMass otherMass)
+        {
+            Debug.Log("Collision Reached");
+            MassAbsortionManager.OnCollisionOfMass(this, otherMass);
         }
 
         private void OnInteract()
@@ -53,10 +63,31 @@ namespace Player
             _movementDirection = Direction;
         }
 
+        #region IMass Implementation
         public float GetMass()
         {
             return _mass;
         }
+
+        public void AbsorbMass(IMass other)
+        {
+            _mass += other.GetMass();
+            
+            Debug.Log($"MassBall::AbsorbMass: new Mass {_mass}");
+            
+            float targetScale = MathF.Min(_maxVisualScale, MathF.Sqrt(_mass));
+            
+            _playerSoftBodyController.SetScale(targetScale);
+        }
+
+        public void BeAbsorbed() { }
+        public GameObject GetGameObject()
+        {
+            return gameObject;
+        }
+        // The Slime can not be absorbed
+
+        #endregion
     }
 }
 
