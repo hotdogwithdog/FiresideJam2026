@@ -36,7 +36,7 @@ public class Catapult : MonoBehaviour, IActivable
             _isTimerRunning = true;
             StartCoroutine(Launch());
         }
-            
+            Debug.Log(other.collider.name);
         _playerColliderCount++;
     }
 
