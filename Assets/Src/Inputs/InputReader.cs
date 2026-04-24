@@ -14,7 +14,7 @@ namespace Inputs
         public Action<Vector2> onMove = delegate { };
         public Action onJump = delegate { };
 
-        public Action onInteract = delegate { };
+        public Action<Vector2> onShootMass = delegate { };
 
         #endregion
         
@@ -74,14 +74,12 @@ namespace Inputs
                 onMove.Invoke(context.ReadValue<Vector2>());
         }
 
-        public void OnAttack(InputAction.CallbackContext context)
+        public void OnShootMass(InputAction.CallbackContext context)
         {
-            Debug.Log("Attack");
-        }
-
-        public void OnInteract(InputAction.CallbackContext context)
-        {
-            if (context.phase == InputActionPhase.Performed) onInteract.Invoke();
+            if (context.phase == InputActionPhase.Performed)
+            {
+                onShootMass.Invoke(Mouse.current.position.ReadValue());
+            }
         }
 
         public void OnJump(InputAction.CallbackContext context)

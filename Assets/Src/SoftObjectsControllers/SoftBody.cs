@@ -5,6 +5,7 @@ using UnityEngine.U2D;
 
 namespace SoftBodyControllers
 {
+    [RequireComponent(typeof(SpriteShapeController))]
     public class SoftBody : MonoBehaviour
     {
         protected struct PointJointsDistances
@@ -30,7 +31,6 @@ namespace SoftBodyControllers
 
         [Header("Spring-Mass system")]
         // The original points that this has no matters, just the configuration of the component and his profile
-        [SerializeField]
         protected SpriteShapeController _spriteShapeController;
 
         // If you are in a child object that generates the points on fly this is not mean to fill it in editor, if not they are nodes of the softbody (they must have rigidBody2D)
@@ -47,7 +47,9 @@ namespace SoftBodyControllers
         protected float _targetAreaBase;
         protected float _targetArea;
 
-        #region PublicMethods
+        #region PublicInterface
+        
+        public Action<MassInteraction.IMass> OnSoftBodyCollisionEnter;
 
         public void AddForce(Vector2 force, float scaleForFarPoints, ForceMode2D forceMode)
         {
@@ -60,35 +62,38 @@ namespace SoftBodyControllers
             Vector2 forceNormal = new Vector2(force.y, -force.x); // Clock-wise perpendicular vector
             float angle = -MathF.Atan2(forceNormal.y, forceNormal.x); // Angle between the normal and the right vector in radians (swap the direction in preparation to the rotation that is counterclock-wise
             Vector2 rotatedAnchor = Utilities.Maths.Rotate2D(angle, _anchor.transform.position);
-            float a = force.magnitude;
-            float b = 0f;
+            Debug.DrawLine(_anchor.transform.position - new Vector3(forceNormal.x, forceNormal.y, 0f) * 5f, _anchor.transform.position + new Vector3(forceNormal.x, forceNormal.y, 0f) * 5f,
+                Color.blueViolet, 1f);
             foreach (GameObject point in _points)
             {
                 Rigidbody2D rb = point.GetComponent<Rigidbody2D>();
+                
+                //Vector2 movedPoint = point.transform.position - _anchor.transform.position; // put the anchor at the origin for preparation to the rotation the compare must be with 0
+                // But we can just rotate the point and the anchor and compare with it, without moving because we just care if is in one side and even if the anchor is not at the center
+                // of the space coordinates it stay horizontally and can done the check that we want so that will be on the code for simplicity
 
                 if (Utilities.Maths.Rotate2D(angle, point.transform.position).y < rotatedAnchor.y)
                 {
                     rb.AddForce(force, forceMode);
-                    b += a;
+                    Utilities.Debug.DrawPoint(point.transform.position, point.GetComponent<CircleCollider2D>().radius + 0.05f, Color.red);
                 }
                 else
                 {
                     rb.AddForce(force * scaleForFarPoints, forceMode);
-                    b += a * 0.5f;
+                    Utilities.Debug.DrawPoint(point.transform.position, point.GetComponent<CircleCollider2D>().radius + 0.05f, Color.green);
                 }
-
             }
-            Debug.Log($"Total Force = {b}");
         }
         #endregion
         
-        private void Awake()
+        protected void Awake()
         {
+            _spriteShapeController = GetComponent<SpriteShapeController>();
             CreatePoints(); // Just if the child overrides the function it will do anything
             InitPointJointsDistances();
             _targetAreaBase = CalculateArea();
             _targetArea = _targetAreaBase;
-            SetScale(_scale, true);
+            //SetScale(_scale, true);
             MatchPointsOfSpriteShape();
             UpdateSpline();
         }
@@ -208,8 +213,8 @@ namespace SoftBodyControllers
 
         private void UpdateSpline()
         {
-            Vector2 center = GetCenter();
-            _anchor.position = center;
+            Vector2 center = GetCenter(false);
+            _anchor.position = GetCenter(true);
             for (int i = 0; i < _points.Length; ++i)
             {
                 Vector2 vertex = _points[i].transform.localPosition;
@@ -247,16 +252,42 @@ namespace SoftBodyControllers
             }
         }
 
-        private Vector2 GetCenter()
+        private Vector2 GetCenter(bool isGlobalSpace)
         {
             Vector2 sum = Vector2.zero;
 
             for (int i = 0; i < _points.Length; ++i)
             {
-                sum += (Vector2)_points[i].transform.position;
+                if (isGlobalSpace)
+                    sum += (Vector2)_points[i].transform.position;
+                else sum += (Vector2)_points[i].transform.localPosition;
             }
 
             return sum / _points.Length;
+        }
+        
+        protected void ClearPointsObjects()
+        {
+            if (_points != null)
+            {
+                for (int i = 0; i < _points.Length; ++i)
+                {
+                    #if UNITY_EDITOR
+                        DestroyImmediate(_points[i]);
+                    #else
+                        Destroy(_points[i]);
+                    #endif
+                }
+            }
+            _points = null;
+        }
+
+        private void OnDestroy()
+        {
+            if (_points != null)
+            {
+                ClearPointsObjects();
+            }
         }
     }
 }
