@@ -62,7 +62,6 @@ namespace MassInteraction
 
         private void OnCollision(IMass otherMass)
         {
-            Debug.Log($"Mass Ball Collision Reached: {_isBeingAbsorbed}");
             if (_isBeingAbsorbed) return;
             MassAbsortionManager.OnCollisionOfMass(this, otherMass);
         }
@@ -74,7 +73,6 @@ namespace MassInteraction
 
         public void AbsorbMass(IMass other)
         {
-            Debug.Log("Mass Ball Absorb");
             _mass += other.GetMass();
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);

@@ -51,6 +51,18 @@ namespace SoftBodyControllers
         
         public Action<MassInteraction.IMass> OnSoftBodyCollisionEnter;
 
+        public void Teleport(Vector2 position)
+        {
+            foreach (GameObject point in _points)
+            {
+                Rigidbody2D rb = point.GetComponent<Rigidbody2D>();
+                
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+                rb.position = rb.position - (new Vector2(_anchor.position.x, _anchor.position.y) - position);
+            }
+        }
+
         public void AddForce(Vector2 force, float scaleForFarPoints, ForceMode2D forceMode)
         {
             if (force == Vector2.zero)

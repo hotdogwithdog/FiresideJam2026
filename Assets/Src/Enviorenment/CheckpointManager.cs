@@ -2,15 +2,36 @@ using UnityEngine;
 
 public class CheckpointManager : Utilities.Singleton<CheckpointManager>
 {
-    private Vector2 _currentCheckpoint;
-
-    public void SetCheckpoint(Vector2 position)
+    public struct CheckpointData
     {
-        _currentCheckpoint = position;
+        static public CheckpointData Invalid = new CheckpointData(0, Vector2.zero, 0f);
+        public int checkpointIndex;
+        public Vector2 position;
+        public float mass;
+
+        public CheckpointData(int checkpointIndex, Vector2 position, float mass)
+        {
+            this.checkpointIndex = checkpointIndex;
+            this.position = position;
+            this.mass = mass;
+        }
+
+        public bool IsValid()
+        {
+            return checkpointIndex != 0 && position != Vector2.zero && mass != 0f;
+        }
     }
 
-    public Vector2 GetCurrentCheckpoint()
+    private CheckpointData _currentCheckpointData = CheckpointData.Invalid;
+    
+
+    public void SetCheckpoint(CheckpointData data)
     {
-        return _currentCheckpoint;
+        _currentCheckpointData = data;
+    }
+
+    public CheckpointData GetCurrentCheckpoint()
+    {
+        return _currentCheckpointData;
     }
 }
