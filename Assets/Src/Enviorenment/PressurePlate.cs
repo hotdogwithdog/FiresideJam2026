@@ -3,12 +3,17 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
+    [SerializeField] private Sprite _activeSprite;
+    [SerializeField] private Sprite _deActiveSprite;
+    
     [SerializeField] private GameObject[] _objectsToActivate;
     private int _playerColliderCount;
     private IActivable[] _activables;
 
+    private SpriteRenderer _spriteRenderer;
     private void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _activables = new IActivable[_objectsToActivate.Length];
         for (int i = 0; i < _objectsToActivate.Length; i++)
         {
@@ -41,6 +46,7 @@ public class PressurePlate : MonoBehaviour
         {
             obj.DeActivate();
         }
+        _spriteRenderer.sprite = _activeSprite;
     }
 
 
@@ -50,5 +56,6 @@ public class PressurePlate : MonoBehaviour
         {
             obj.Activate();
         }
+        _spriteRenderer.sprite = _deActiveSprite;
     }
 }
