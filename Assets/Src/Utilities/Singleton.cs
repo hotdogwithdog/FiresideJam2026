@@ -15,7 +15,7 @@ namespace Utilities
             }
             else
             {
-                Debug.LogError($"The Singleton of type: {typeof(T)}, already exists, Destroying the new object");
+                UnityEngine.Debug.LogError($"The Singleton of type: {typeof(T)}, already exists, Destroying the new object");
                 Destroy(this.gameObject);
                 return;
             }

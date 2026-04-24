@@ -10,10 +10,7 @@ namespace MassInteraction
     {
         [SerializeField] private float _mass = 5f;
 
-        [SerializeField] private float _timeOfAbsortion = 0.5f;
-
         private bool _isBeingAbsorbed = false;
-        
 
         private SoftBody _softBody;
 
@@ -21,6 +18,10 @@ namespace MassInteraction
         {
             _softBody = GetComponent<SoftBody>();
             _softBody.OnSoftBodyCollisionEnter += OnCollision;
+        }
+        public void Init(float mass)
+        {
+            _mass = mass;
         }
         private void Start()
         {
@@ -61,7 +62,7 @@ namespace MassInteraction
 
         private void OnCollision(IMass otherMass)
         {
-            Debug.Log("Collision Reached");
+            Debug.Log($"Mass Ball Collision Reached: {_isBeingAbsorbed}");
             if (_isBeingAbsorbed) return;
             MassAbsortionManager.OnCollisionOfMass(this, otherMass);
         }
@@ -73,6 +74,7 @@ namespace MassInteraction
 
         public void AbsorbMass(IMass other)
         {
+            Debug.Log("Mass Ball Absorb");
             _mass += other.GetMass();
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);

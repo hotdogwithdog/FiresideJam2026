@@ -7,21 +7,27 @@ namespace Player
 {
     public class PlayerController : MonoBehaviour, MassInteraction.IMass
     {
+        [Header("Movement")]
         [SerializeField] private float _jumpForce = 5f;
         [SerializeField] private float _movementForce = 2f;
-
+        [SerializeField] private LayerMask _groundMask;
+        
         [SerializeField] private Transform _playerAnchor; // Center of the slime
 
-        [SerializeField] private GameObject _massBallPrefab;
-        [SerializeField] private float _throwForce = 2f;
-        [SerializeField] private float _timeOfIgnoreCollisionsWithThrowMass = 0.2f;
-
+        
         private SlimeSoftBodyController _playerSoftBody;
         private Vector2 _movementDirection;
 
+        [Header("Mass")]
         [SerializeField] private float _mass = 100f;
         [SerializeField] private float _maxMass = 200f;
         
+        [Header("Mass throw")]
+        [SerializeField] private GameObject _massBallPrefab;
+        [SerializeField] private float _throwMassCantity = 5f;
+        [SerializeField] private float _throwForce = 2f;
+        [SerializeField] private float _timeOfIgnoreCollisionsWithThrowMass = 0.2f;
+
         private void Start()
         {
             Inputs.InputReader.Instance.onMove += OnMove;
@@ -30,27 +36,26 @@ namespace Player
             _movementDirection = Vector2.zero;
 
             _playerSoftBody = GetComponent<SlimeSoftBodyController>();
-            _playerSoftBody.OnSoftBodyCollisionEnter += OnSoftBodyCollision;
             _playerSoftBody.SetScale(Utilities.Maths.GetScaleFromMass(_mass));
-        }
-
-        private void OnSoftBodyCollision(IMass otherMass)
-        {
-            Debug.Log("Collision Reached");
-            MassAbsortionManager.OnCollisionOfMass(this, otherMass);
         }
 
         private void OnShootMass(Vector2 mousePositionInScreenSpace)
         {
+            if (_mass <= _throwMassCantity)
+            {
+                // TODO: Add a Sound of action rejected
+                Debug.Log("PlayerController::OnShootMass: Mass insuficent, rejectMassThrow");
+                return;
+            }
             Vector3 mousePosWorldSpace = Camera.main.ScreenToWorldPoint(mousePositionInScreenSpace);
             Vector3 throwDirection = (mousePosWorldSpace - _playerAnchor.position).normalized;
             
             GameObject massBallGameObject = Instantiate(_massBallPrefab);
             massBallGameObject.transform.position = _playerAnchor.position + throwDirection * 3f;
-
             MassBall massBall = massBallGameObject.GetComponent<MassBall>();
+            massBall.Init(_throwMassCantity);
             
-            ReduceMass(massBall.GetMass());
+            ReduceMass(_throwMassCantity);
             massBall.Throw(throwDirection * _throwForce, _playerSoftBody, _timeOfIgnoreCollisionsWithThrowMass);
         }
 
@@ -65,8 +70,10 @@ namespace Player
 
         private void OnJump()
         {
-            // TODO: Make the jump just available if is on ground (must check the other nodes this script is set to the center point of the mass-spring system
-            _playerSoftBody.AddForce(Vector2.up * _jumpForce, 0.5f, ForceMode2D.Impulse);
+            bool isGrounded = Physics2D.Raycast(_playerAnchor.position, Vector2.down, _playerSoftBody.Scale * 0.5f + 0.5f, _groundMask);
+            Debug.DrawLine(_playerAnchor.position, _playerAnchor.position + Vector3.down * (_playerSoftBody.Scale * 0.5f + 0.5f), Color.blue, 1f);
+            if (!isGrounded) return;
+            _playerSoftBody.AddForce(Vector2.up * _jumpForce, 1.5f, ForceMode2D.Impulse);
         }
 
         private void OnMove(Vector2 Direction)
@@ -82,6 +89,7 @@ namespace Player
 
         public void AbsorbMass(IMass other)
         {
+            Debug.Log("Player absorb");
             _mass = MathF.Min(_maxMass, _mass + other.GetMass());
             
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);

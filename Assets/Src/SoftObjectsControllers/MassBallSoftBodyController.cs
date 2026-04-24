@@ -49,7 +49,7 @@ namespace SoftBodyControllers
                 
                 _points[i].GetComponent<CircleCollider2D>().radius = _pointRadius;
                 _points[i].transform.SetParent(this.transform);
-                _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f).normalized * _radius;
+                _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f) * _radius;
                 
                 t += interval;
             }

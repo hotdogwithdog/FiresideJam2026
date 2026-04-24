@@ -62,25 +62,27 @@ namespace SoftBodyControllers
             Vector2 forceNormal = new Vector2(force.y, -force.x); // Clock-wise perpendicular vector
             float angle = -MathF.Atan2(forceNormal.y, forceNormal.x); // Angle between the normal and the right vector in radians (swap the direction in preparation to the rotation that is counterclock-wise
             Vector2 rotatedAnchor = Utilities.Maths.Rotate2D(angle, _anchor.transform.position);
-            float a = force.magnitude;
-            float b = 0f;
+            Debug.DrawLine(_anchor.transform.position - new Vector3(forceNormal.x, forceNormal.y, 0f) * 5f, _anchor.transform.position + new Vector3(forceNormal.x, forceNormal.y, 0f) * 5f,
+                Color.blueViolet, 1f);
             foreach (GameObject point in _points)
             {
                 Rigidbody2D rb = point.GetComponent<Rigidbody2D>();
+                
+                //Vector2 movedPoint = point.transform.position - _anchor.transform.position; // put the anchor at the origin for preparation to the rotation the compare must be with 0
+                // But we can just rotate the point and the anchor and compare with it, without moving because we just care if is in one side and even if the anchor is not at the center
+                // of the space coordinates it stay horizontally and can done the check that we want so that will be on the code for simplicity
 
                 if (Utilities.Maths.Rotate2D(angle, point.transform.position).y < rotatedAnchor.y)
                 {
                     rb.AddForce(force, forceMode);
-                    b += a;
+                    Utilities.Debug.DrawPoint(point.transform.position, point.GetComponent<CircleCollider2D>().radius + 0.05f, Color.red);
                 }
                 else
                 {
                     rb.AddForce(force * scaleForFarPoints, forceMode);
-                    b += a * 0.5f;
+                    Utilities.Debug.DrawPoint(point.transform.position, point.GetComponent<CircleCollider2D>().radius + 0.05f, Color.green);
                 }
-
             }
-            Debug.Log($"Total Force = {b}");
         }
         #endregion
         
