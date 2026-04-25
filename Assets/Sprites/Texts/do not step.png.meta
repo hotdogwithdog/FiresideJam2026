@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 745163bd22e7d0f4cab8bcea67a27d15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3763326806376590544
+    second: do not step_0
+  - first:
+      213: 1094799422526979625
+    second: do not step_1
+  - first:
+      213: 960838340952385300
+    second: do not step_2
+  - first:
+      213: 5765276266062677889
+    second: do not step_3
+  - first:
+      213: -5830627609846154704
+    second: do not step_4
+  - first:
+      213: 7076708125309990636
+    second: do not step_5
+  - first:
+      213: -8254260314884835485
+    second: do not step_6
+  - first:
+      213: 8226043891065281760
+    second: do not step_7
+  - first:
+      213: -2781336749387989449
+    second: do not step_8
+  - first:
+      213: 3319979339110655029
+    second: do not step_9
+  - first:
+      213: 7889641760369935754
+    second: do not step_10
+  - first:
+      213: 2176766353259913300
+    second: do not step_11
+  - first:
+      213: -5293311967956536400
+    second: do not step_12
+  - first:
+      213: 8823168393076490441
+    second: do not step_13
+  - first:
+      213: 2539845724702892801
+    second: do not step_14
+  - first:
+      213: -1101392475555204853
+    second: do not step_15
+  - first:
+      213: 9188614769931211010
+    second: do not step_16
+  - first:
+      213: -1901233634443888679
+    second: do not step_17
+  - first:
+      213: 2179822143096745263
+    second: do not step_18
+  - first:
+      213: 5556263765811592504
+    second: do not step_19
+  - first:
+      213: 7093049135506552370
+    second: do not step_20
+  - first:
+      213: 7563336847176728480
+    second: do not step_21
+  - first:
+      213: -930378245995420591
+    second: do not step_22
+  - first:
+      213: 9127069004139004719
+    second: do not step_23
+  - first:
+      213: 6138551719207688646
+    second: do not step_24
+  - first:
+      213: 7257522113327926365
+    second: do not step_25
+  - first:
+      213: 3323296892600455742
+    second: do not step_26
+  - first:
+      213: 460801231720510885
+    second: do not step_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: do not step_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 196
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033d734653af5cbc0800000000000000
+      internalID: -3763326806376590544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 218
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ef5083642813f00800000000000000
+      internalID: 1094799422526979625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 214
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 417ea0f5165955d00800000000000000
+      internalID: 960838340952385300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 214
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18708aed730620050800000000000000
+      internalID: 5765276266062677889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 212
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03af881b413751fa0800000000000000
+      internalID: -5830627609846154704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_5
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 208
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6f834cb84853260800000000000000
+      internalID: 7076708125309990636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 206
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3677faff9f9f27d80800000000000000
+      internalID: -8254260314884835485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_7
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 204
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecd7b1e557c82270800000000000000
+      internalID: 8226043891065281760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_8
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 204
+        width: 56
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e3dfb66f4b669d0800000000000000
+      internalID: -2781336749387989449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_9
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 184
+        width: 46
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534a3517e9fe21e20800000000000000
+      internalID: 3319979339110655029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 202
+        width: 44
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8500f34163ad7d60800000000000000
+      internalID: 7889641760369935754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_11
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 206
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450641d177d653e10800000000000000
+      internalID: 2176766353259913300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_12
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 198
+        width: 56
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b370a07fc06a86b0800000000000000
+      internalID: -5293311967956536400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_13
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 222
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c047c608e0327a70800000000000000
+      internalID: 8823168393076490441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_14
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 194
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103e53dda385f3320800000000000000
+      internalID: 2539845724702892801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b017e30016117b0f0800000000000000
+      internalID: -1101392475555204853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_16
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 82
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20158ab2374848f70800000000000000
+      internalID: 9188614769931211010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 88
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d772f725167d95e0800000000000000
+      internalID: -1901233634443888679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 74
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2defc0a0b8404e10800000000000000
+      internalID: 2179822143096745263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_19
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 76
+        width: 56
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83df297e470db1d40800000000000000
+      internalID: 5556263765811592504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_20
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 84
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2367240bb929f6260800000000000000
+      internalID: 7093049135506552370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_21
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 72
+        width: 56
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af779c4ace56f860800000000000000
+      internalID: 7563336847176728480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_22
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 80
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15421b42ae1a613f0800000000000000
+      internalID: -930378245995420591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 86
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f230f28e6ecd9ae70800000000000000
+      internalID: 9127069004139004719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 92
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9dcb2e344803550800000000000000
+      internalID: 6138551719207688646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_25
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 82
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c047af8e5e7b460800000000000000
+      internalID: 7257522113327926365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_26
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 82
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e321c9e8ae8be1e20800000000000000
+      internalID: 3323296892600455742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: do not step_27
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 58
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a573c06748156600800000000000000
+      internalID: 460801231720510885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      do not step_0: -3763326806376590544
+      do not step_1: 1094799422526979625
+      do not step_10: 7889641760369935754
+      do not step_11: 2176766353259913300
+      do not step_12: -5293311967956536400
+      do not step_13: 8823168393076490441
+      do not step_14: 2539845724702892801
+      do not step_15: -1101392475555204853
+      do not step_16: 9188614769931211010
+      do not step_17: -1901233634443888679
+      do not step_18: 2179822143096745263
+      do not step_19: 5556263765811592504
+      do not step_2: 960838340952385300
+      do not step_20: 7093049135506552370
+      do not step_21: 7563336847176728480
+      do not step_22: -930378245995420591
+      do not step_23: 9127069004139004719
+      do not step_24: 6138551719207688646
+      do not step_25: 7257522113327926365
+      do not step_26: 3323296892600455742
+      do not step_27: 460801231720510885
+      do not step_3: 5765276266062677889
+      do not step_4: -5830627609846154704
+      do not step_5: 7076708125309990636
+      do not step_6: -8254260314884835485
+      do not step_7: 8226043891065281760
+      do not step_8: -2781336749387989449
+      do not step_9: 3319979339110655029
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
