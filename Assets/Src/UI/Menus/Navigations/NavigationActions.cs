@@ -1,4 +1,4 @@
-﻿namespace UI.Menus
+﻿namespace UI.Menus.Navigation
 {
     public enum NavigationActions
     {
@@ -9,6 +9,18 @@
         Pause,
         Resume,
         Back,
-        MainMenu
+        MainMenu,
+        Exit,
+        NextLevel,
+        
+        
+        
+        // Little shit code for do simple the level selector
+        Level1,
+        Level2,
+        Level3,
+        Level4,
+        Level5,
+        Level6,
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System;
 using UnityEngine;
 
-namespace UI.Menus
+
+namespace UI.Menus.Navigation
 {
     public class NavigationEventGroup: MonoBehaviour
     {
-        public Action<NavigationActions> OnClick;
+        public Action<NavigationActions> onNavigationEvent;
         private NavigationEvent[] _navigationEvents;
 
         private void Start()
@@ -14,7 +15,7 @@ namespace UI.Menus
 
             foreach (var navigationEvent in _navigationEvents)
             {
-                navigationEvent.OnClick += OnNavigationClick;
+                navigationEvent.onNavigationClick += OnNavigationClick;
             }
         }
 
@@ -22,14 +23,14 @@ namespace UI.Menus
         {
             foreach (var navigationEvent in _navigationEvents)
             {
-                navigationEvent.OnClick -= OnNavigationClick;
+                navigationEvent.onNavigationClick -= OnNavigationClick;
             }
         }
 
 
         private void OnNavigationClick(NavigationActions navigationAction)
         {
-            OnClick?.Invoke(navigationAction);
+            onNavigationEvent?.Invoke(navigationAction);
         }
     }
 }

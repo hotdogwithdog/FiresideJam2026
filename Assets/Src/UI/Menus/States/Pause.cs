@@ -1,4 +1,7 @@
-﻿namespace UI.Menus.States
+﻿using UI.Menus.Navigation;
+using UnityEngine;
+
+namespace UI.Menus.States
 {
     public class Pause: AMenuState
     {
@@ -8,14 +11,18 @@
         {
             switch (action)
             {
+                case NavigationActions.Resume:
+                    // TODO: If the gameplay state have something that wants to store it needs to be passed in this constructor by the gameplay state itself for restore that same instance of gameplay
+                    MenuManager.Instance.SetState(new Gameplay());
+                    break;
+                case NavigationActions.Options:
+                    MenuManager.Instance.SetState(new Options());
+                    break;
                 case NavigationActions.MainMenu:
                     MenuManager.Instance.SetState(new Main());
                     break;
-                case NavigationActions.Resume:
-                    MenuManager.Instance.SetState(new Play());
-                    break;
-                case NavigationActions.Options:
-                    MenuManager.Instance.SetState(new Options(false));
+                default:
+                    Debug.LogWarning($"Pause::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
                     break;
             }
         }

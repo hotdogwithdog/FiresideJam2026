@@ -1,14 +1,12 @@
-﻿using UnityEngine;
+﻿using UI.Menus.Navigation;
+using UnityEngine;
 
 namespace UI.Menus.States
 {
     public class Options: AMenuState
     {
-        private bool _isMainMenu;
-
-        public Options(bool isMainMenu) : base("Menus/Options")
+        public Options() : base("Menus/Options")
         {
-            _isMainMenu = isMainMenu;
         }
 
         protected override void OnOptionsClicked(NavigationActions action)
@@ -16,23 +14,11 @@ namespace UI.Menus.States
             switch (action)
             {
                 case NavigationActions.Back :
-                    Back();
+                    MenuManager.Instance.SetState(MenuManager.Instance.PreviousState);
                     break;
                 default:
-                    Debug.LogError("Unknown action: " + action);
+                    Debug.LogWarning($"Options::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
                     break;
-            }
-        }
-
-        private void Back()
-        {
-            if (_isMainMenu)
-            {
-                MenuManager.Instance.SetState(new Main());
-            }
-            else
-            {
-                MenuManager.Instance.SetState(new Pause());
             }
         }
 
