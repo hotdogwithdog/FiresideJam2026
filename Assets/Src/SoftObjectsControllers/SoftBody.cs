@@ -49,6 +49,8 @@ namespace SoftBodyControllers
 
         #region PublicInterface
         
+        public Vector2 Anchor => _anchor.position;
+        
         public Action<MassInteraction.IMass> OnSoftBodyCollisionEnter;
 
         public void Teleport(Vector2 position)
@@ -221,6 +223,7 @@ namespace SoftBodyControllers
         private void LateUpdate()
         {
             UpdateSpline();
+            _spriteShapeController.RefreshSpriteShape();
         }
 
         private void UpdateSpline()
