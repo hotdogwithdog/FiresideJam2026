@@ -10,6 +10,7 @@ namespace UI.Menus
     {
         [SerializeField] private TextMeshProUGUI _titleText;
         [SerializeField] private TextMeshProUGUI _massText;
+        [SerializeField] private GameObject _nextLevelButton;
         
         private PlayerController _playerController;
         
@@ -24,6 +25,12 @@ namespace UI.Menus
             _titleText.text = "Level " + LevelControl.LevelManager.Instance.CurrentLevel + " Completed";
             
             _massText.text += _playerController.GetMass().ToString("F2") + " / " + _playerController.MaxMass.ToString("F2");
+
+            if (LevelControl.LevelManager.Instance.CurrentLevel == 6)
+            {
+                // Disable the Next Level Button
+                _nextLevelButton.SetActive(false);
+            }
         }
     }
 }

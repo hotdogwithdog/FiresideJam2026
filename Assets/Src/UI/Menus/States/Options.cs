@@ -21,6 +21,11 @@ namespace UI.Menus.States
                     break;
             }
         }
+        
+        protected override void OnEscPressed()
+        {
+            MenuManager.Instance.SetState(MenuManager.Instance.PreviousState);
+        }
 
         public override void Update(float deltaTime) { }
     }

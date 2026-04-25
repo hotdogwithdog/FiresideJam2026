@@ -8,8 +8,9 @@ namespace UI.Menus.States
     {
         public void Enter()
         {
-            // TODO: Have this input
-            //InputReader.Instance.onPause += OnPause;
+            InputReader.Instance.onPause += OnPause;
+            
+            Time.timeScale = 1f;
         }
 
         private void OnPause()
@@ -19,7 +20,7 @@ namespace UI.Menus.States
 
         public void Exit()
         {
-            //InputReader.Instance.onPause += OnPause;
+            InputReader.Instance.onPause -= OnPause;
         }
 
         public void Update(float deltaTime) { }

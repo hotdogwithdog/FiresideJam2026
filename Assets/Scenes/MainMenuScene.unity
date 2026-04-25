@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 61365313}
   - component: {fileID: 61365312}
   - component: {fileID: 61365314}
+  - component: {fileID: 61365315}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -189,6 +190,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f29deac957473eb79ddb3585727eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.MenuManager
+--- !u!114 &61365315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61365310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829f0e4cedc343a7aeb08f4d3c9f8a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelControl.LevelManager
 --- !u!1 &1288735847
 GameObject:
   m_ObjectHideFlags: 0

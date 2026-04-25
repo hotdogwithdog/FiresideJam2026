@@ -7,6 +7,13 @@ namespace UI.Menus.States
     {
         public Pause() : base("Menus/Pause") { }
 
+        public override void Enter()
+        {
+            base.Enter();
+            
+            Time.timeScale = 0f;
+        }
+        
         protected override void OnOptionsClicked(NavigationActions action)
         {
             switch (action)
@@ -25,6 +32,11 @@ namespace UI.Menus.States
                     Debug.LogWarning($"Pause::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
                     break;
             }
+        }
+        
+        protected override void OnEscPressed()
+        {
+            MenuManager.Instance.SetState(new Gameplay());
         }
 
         public override void Update(float deltaTime) { }

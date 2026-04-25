@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using Inputs;
+using UnityEngine;
 using UI.Menus.Navigation;
+using Unity.VisualScripting;
 
 namespace UI.Menus.States
 {
@@ -14,6 +16,8 @@ namespace UI.Menus.States
         }
         public virtual void Enter()
         {
+            InputReader.Instance.onPause += OnEscPressed;
+            
             _canvas = GameObject.FindWithTag("Canvas").GetComponent<Canvas>();
             GameObject menuPrefab = Resources.Load(_menuName) as GameObject;
             _menu = GameObject.Instantiate(menuPrefab, _canvas.transform);
@@ -21,9 +25,12 @@ namespace UI.Menus.States
             _menu.GetComponentInChildren<NavigationEventGroup>().onNavigationEvent += OnOptionsClicked;
         }
 
+        protected virtual void OnEscPressed() { }
         protected abstract void OnOptionsClicked(NavigationActions action);
         public virtual void Exit()
         {
+            InputReader.Instance.onPause -= OnEscPressed;
+            
             if (_menu != null)
             {
                 _menu.GetComponentInChildren<NavigationEventGroup>().onNavigationEvent -= OnOptionsClicked;

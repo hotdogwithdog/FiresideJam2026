@@ -1,5 +1,7 @@
 using System.Collections;
 using Player;
+using UI.Menus;
+using UI.Menus.States;
 using UnityEngine;
 
 public class Goal : MonoBehaviour, IActivable
@@ -56,7 +58,7 @@ public class Goal : MonoBehaviour, IActivable
 
     private void Win()
     {
-        //MenuManager.Instance.SetState(new EndLevel());
+        MenuManager.Instance.SetState(new EndLevel());
         Debug.Log("Win");
         _isActivated = true;
     }

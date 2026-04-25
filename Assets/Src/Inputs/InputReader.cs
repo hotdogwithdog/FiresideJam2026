@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Inputs
 {
-    public class InputReader : Utilities.Singleton<InputReader>, Actions.IPlayerActions
+    public class InputReader : Utilities.Singleton<InputReader>, Actions.IPlayerActions, Actions.ICommonActions
     {
         public Actions actions;
         
@@ -17,6 +17,12 @@ namespace Inputs
         public Action<Vector2> onShootMass = delegate { };
         public Action onRespawnRequest = delegate { };
 
+        #endregion
+        
+        #region CommonEvents
+
+        public Action onPause = delegate { };
+        
         #endregion
         
         #region ActivatesAndDisables
@@ -36,6 +42,7 @@ namespace Inputs
             }
             
             actions.Player.SetCallbacks(this);
+            actions.Common.SetCallbacks(this);
             //actions.UI.SetCallbacks(this);
             
             actions.Enable();
@@ -44,25 +51,35 @@ namespace Inputs
         private void OnDisable()
         {
             actions.Player.SetCallbacks(null);
+            actions.Common.SetCallbacks(null);
             actions.UI.SetCallbacks(null);
             actions.Disable();
         }
-
-
+        
+        public void EnableJustCommonActions()
+        {
+            actions.Common.Enable();
+            actions.Player.Disable();
+            actions.UI.Disable();
+        }
+        
         public void EnablePlayerActions()
         {
+            actions.Common.Enable();
             actions.Player.Enable();
             actions.UI.Disable();
         }
 
         public void EnableUIActions()
         {
+            actions.Common.Enable();
             actions.UI.Enable();
             actions.Player.Disable();
         }
 
         public void DisableAllActions()
         {
+            actions.Common.Disable();
             actions.Player.Disable();
             actions.UI.Disable();
         }
@@ -94,5 +111,13 @@ namespace Inputs
         }
 
         #endregion
+
+        #region CommonsActions
+        public void OnPause(InputAction.CallbackContext context)
+        {
+            if (context.phase == InputActionPhase.Performed) onPause.Invoke();
+        }
+        #endregion
+        
     }
 }

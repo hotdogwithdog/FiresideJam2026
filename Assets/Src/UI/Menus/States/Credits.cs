@@ -7,6 +7,8 @@ namespace UI.Menus.States
     {
         public Credits() : base("Menus/Credits") { }
 
+        
+
         protected override void OnOptionsClicked(NavigationActions action)
         {
             switch (action)
@@ -20,6 +22,11 @@ namespace UI.Menus.States
             }
         }
 
+        protected override void OnEscPressed()
+        {
+            MenuManager.Instance.SetState(MenuManager.Instance.PreviousState);
+        }
+        
         public override void Update(float deltaTime) { }
     }
 }

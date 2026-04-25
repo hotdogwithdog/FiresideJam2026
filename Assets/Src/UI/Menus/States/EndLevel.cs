@@ -1,4 +1,5 @@
-﻿using UI.Menus.Navigation;
+﻿using LevelControl;
+using UI.Menus.Navigation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,8 +27,14 @@ namespace UI.Menus.States
 
         private void GoToNextLevel()
         {
-            string nextSceneName = "Level" + (++LevelControl.LevelManager.Instance.CurrentLevel);
+            LevelManager.Instance.CurrentLevel++;
+            string nextSceneName = LevelManager.Instance.GetLevelName(LevelManager.Instance.CurrentLevel);
             MenuManager.Instance.ChangeSceneAndState(nextSceneName, new Gameplay());
+        }
+        
+        protected override void OnEscPressed()
+        {
+            MenuManager.Instance.SetState(new Main());
         }
 
         public override void Update(float deltaTime) { }

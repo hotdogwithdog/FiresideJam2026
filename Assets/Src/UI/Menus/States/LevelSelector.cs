@@ -15,35 +15,36 @@ namespace UI.Menus.States
             {
                 case NavigationActions.Level1:
                     LevelManager.Instance.CurrentLevel = 1;
-                    MenuManager.Instance.ChangeSceneAndState("Level1", new Gameplay());
                     break;
                 case NavigationActions.Level2:
                     LevelManager.Instance.CurrentLevel = 2;
-                    MenuManager.Instance.ChangeSceneAndState("Level2", new Gameplay());
                     break;
                 case NavigationActions.Level3:
                     LevelManager.Instance.CurrentLevel = 3;
-                    MenuManager.Instance.ChangeSceneAndState("Level3", new Gameplay());
                     break;
                 case NavigationActions.Level4:
                     LevelManager.Instance.CurrentLevel = 4;
-                    MenuManager.Instance.ChangeSceneAndState("Level4", new Gameplay());
                     break;
                 case NavigationActions.Level5:
                     LevelManager.Instance.CurrentLevel = 5;
-                    MenuManager.Instance.ChangeSceneAndState("Level5", new Gameplay());
                     break;
                 case NavigationActions.Level6:
                     LevelManager.Instance.CurrentLevel = 6;
-                    MenuManager.Instance.ChangeSceneAndState("Level6", new Gameplay());
                     break;
                 case NavigationActions.Back:
                     MenuManager.Instance.SetState(new Main());
-                    break;
+                    return;
                 default:
                     Debug.LogWarning($"LevelSelector::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
                     return;
             }
+            
+            MenuManager.Instance.ChangeSceneAndState(LevelManager.Instance.GetCurrentLevelName(), new Gameplay());
+        }
+        
+        protected override void OnEscPressed()
+        {
+            MenuManager.Instance.SetState(new Main());
         }
 
         public override void Update(float deltaTime) { }

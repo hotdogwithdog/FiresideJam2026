@@ -50,8 +50,6 @@ namespace SoftBodyControllers
 
         #region PublicInterface
         
-        public Vector2 Anchor => _anchor.position;
-        
         public Action<MassInteraction.IMass> OnSoftBodyCollisionEnter;
         public Transform Anchor => _anchor;
 
