@@ -2,6 +2,7 @@ using System;
 using MassInteraction;
 using SoftBodyControllers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Player
 {
@@ -10,6 +11,7 @@ namespace Player
         [Header("Movement")]
         [SerializeField] private float _jumpForce = 5f;
         [SerializeField] private float _movementForce = 2f;
+        [SerializeField] private float _extraOffsetForRaycastToTheGround = 0.5f;
         [SerializeField] private LayerMask _groundMask;
         
         [SerializeField] private Transform _playerAnchor; // Center of the slime
@@ -40,6 +42,7 @@ namespace Player
             Inputs.InputReader.Instance.onMove += OnMove;
             Inputs.InputReader.Instance.onJump += OnJump;
             Inputs.InputReader.Instance.onShootMass += OnShootMass;
+            Inputs.InputReader.Instance.onRespawnRequest += OnRespawnRequest;
             _movementDirection = Vector2.zero;
 
             _playerSoftBody = GetComponent<SlimeSoftBodyController>();
@@ -78,10 +81,26 @@ namespace Player
 
         private void OnJump()
         {
-            bool isGrounded = Physics2D.Raycast(_playerAnchor.position, Vector2.down, _playerSoftBody.Scale * 0.5f + 0.5f, _groundMask);
-            Debug.DrawLine(_playerAnchor.position, _playerAnchor.position + Vector3.down * (_playerSoftBody.Scale * 0.5f + 0.5f), Color.blue, 1f);
+            bool isGrounded = Physics2D.Raycast(_playerAnchor.position, Vector2.down, _playerSoftBody.Scale * 0.75f + _extraOffsetForRaycastToTheGround, _groundMask);
+            Debug.DrawLine(_playerAnchor.position, _playerAnchor.position + Vector3.down * (_playerSoftBody.Scale * 0.75f + _extraOffsetForRaycastToTheGround), Color.blue, 1f);
             if (!isGrounded) return;
             _playerSoftBody.AddForce(Vector2.up * _jumpForce, 1.5f, ForceMode2D.Impulse);
+        }
+        
+        private void OnRespawnRequest()
+        {
+            Debug.Log("PlayerController::OnRespawnRequest");
+            CheckpointManager.CheckpointData checkpointData = CheckpointManager.Instance.GetCurrentCheckpoint();
+            if (checkpointData.IsValid())
+            {
+                _playerSoftBody.Teleport(checkpointData.position);
+                _playerSoftBody.SetScale(Utilities.Maths.GetScaleFromMass(checkpointData.mass));
+                _mass = checkpointData.mass;
+                return;
+            }
+            // if no checkpoint we can just restart the level
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         private void OnMove(Vector2 Direction)
@@ -97,7 +116,6 @@ namespace Player
 
         public void AbsorbMass(IMass other)
         {
-            Debug.Log("Player absorb");
             _mass = MathF.Min(_maxMass, _mass + other.GetMass());
             onMassChanged?.Invoke(_mass);
             
