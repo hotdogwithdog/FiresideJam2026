@@ -3,6 +3,8 @@ using Enviorenment;
 using MassInteraction;
 using UnityEngine;
 
+[RequireComponent(typeof(ParticleSystem))]
+[RequireComponent(typeof(Animator))]
 public class Fan : ASoftBodyInteract, IActivable
 {
     
@@ -10,11 +12,20 @@ public class Fan : ASoftBodyInteract, IActivable
     [SerializeField] private float _fanForce = 3f;
     
     [SerializeField] private bool _isActivated = true;
+    private ParticleSystem _particleSystem;
+    private Animator _animator;
+
+    private void Start()
+    {
+        _particleSystem = GetComponent<ParticleSystem>();
+        _animator = GetComponent<Animator>();
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if (!_isActivated) return;
         
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("MassBall"))
         {
             PushPlayer(other.gameObject);
         }
@@ -22,6 +33,8 @@ public class Fan : ASoftBodyInteract, IActivable
 
     public void Activate()
     {
+        _particleSystem.Play();
+        _animator.SetBool("isActive", true);
         _isActivated = true;
     }
 
@@ -33,18 +46,28 @@ public class Fan : ASoftBodyInteract, IActivable
 
     public void DeActivate()
     {
+        _particleSystem.Stop();
+        _animator.SetBool("isActive", false);
         _isActivated = false;
     }
 
     public void SwapState()
     {
-        _isActivated = !_isActivated;
+        if (_isActivated)
+        {
+            DeActivate();
+        }
+        else
+        {
+            Activate();
+        }
     }
 
     protected override void OnSoftBodyEntered(IMass softBodyMass) { }
 
     protected override void OnSoftBodyStay(IMass softBodyMass)
     {
+        if (!_isActivated) return;
         softBodyMass.ReduceMass(_massToReduce);
     }
 

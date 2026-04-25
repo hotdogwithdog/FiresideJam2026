@@ -19,11 +19,7 @@ namespace Enviorenment
                 this.count = count;
             }
         }
-
-
-
-
-
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             IMass mass = other.gameObject.GetComponentInParent<IMass>(); 
