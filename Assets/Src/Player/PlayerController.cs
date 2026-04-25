@@ -3,6 +3,7 @@ using MassInteraction;
 using SoftBodyControllers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = System.Object;
 
 namespace Player
 {
@@ -58,11 +59,12 @@ namespace Player
                 Debug.Log("PlayerController::OnShootMass: Mass insuficent, rejectMassThrow");
                 return;
             }
-            Vector3 mousePosWorldSpace = Camera.main.ScreenToWorldPoint(mousePositionInScreenSpace);
-            Vector3 throwDirection = (mousePosWorldSpace - _playerAnchor.position).normalized;
+            Vector2 mousePosWorldSpace = Camera.main.ScreenToWorldPoint(mousePositionInScreenSpace);
+            Vector2 anchor = _playerAnchor.position;
+            Vector2 throwDirection = (mousePosWorldSpace - anchor).normalized;
             
             GameObject massBallGameObject = Instantiate(_massBallPrefab);
-            massBallGameObject.transform.position = _playerAnchor.position + throwDirection * 3f;
+            massBallGameObject.transform.position = anchor + throwDirection * 3f;
             MassBall massBall = massBallGameObject.GetComponent<MassBall>();
             massBall.Init(_throwMassCantity);
             
@@ -96,6 +98,10 @@ namespace Player
                 _playerSoftBody.Teleport(checkpointData.position);
                 _playerSoftBody.SetScale(Utilities.Maths.GetScaleFromMass(checkpointData.mass));
                 _mass = checkpointData.mass;
+                foreach (GameObject massBall in GameObject.FindGameObjectsWithTag("MassBall"))
+                {
+                    Destroy(massBall);
+                }
                 return;
             }
             // if no checkpoint we can just restart the level

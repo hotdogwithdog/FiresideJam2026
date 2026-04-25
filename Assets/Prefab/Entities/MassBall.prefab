@@ -578,8 +578,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MassInteraction.MassBall
   _mass: 5
-  _timeOfAbsortion: 0.5
-  _timeForIgnorePlayerWhenThrow: 0.2
 --- !u!1971053207 &1274267487488744352
 SpriteShapeRenderer:
   serializedVersion: 2
@@ -631,8 +629,9 @@ SpriteShapeRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_ShapeTexture: {fileID: 2800000, guid: c6031f54cd165144d8f6a29f8c2a68e7, type: 3}
+  m_ShapeTexture: {fileID: 2800000, guid: f0b3117caffa57d48b60e387fe952d31, type: 3}
   m_Sprites:
+  - {fileID: 21300000, guid: a281eb33d76f9954699dc71e5eed18d2, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
@@ -642,8 +641,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0.21268028, y: -0.09650147, z: 0}
-    m_Extent: {x: 0.8771086, y: 0.87594044, z: 0}
+    m_Center: {x: 0.21268982, y: -0.097767234, z: 0}
+    m_Extent: {x: 0.9395494, y: 0.93711424, z: 0}
   m_SpriteSortPoint: 0
 --- !u!114 &1499206972484691402
 MonoBehaviour:
@@ -737,7 +736,7 @@ MonoBehaviour:
   m_UpdateCollider: 1
   m_EnableTangents: 0
   m_GeometryCached: 0
-  m_UTess2D: 1
+  m_UTess2D: 0
   m_UpdateShadow: 0
   m_ShadowDetail: 16
   m_ShadowOffset: 0.5

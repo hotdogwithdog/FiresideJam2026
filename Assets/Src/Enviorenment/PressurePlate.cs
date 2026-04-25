@@ -49,10 +49,9 @@ public class PressurePlate : ASoftBodyInteract
         switch (_buttonMode)
         {
             case ButtonMode.PressurePlate:
-                
+                DeactivatePressurePlate();
                 break;
             case ButtonMode.Button:
-                DeactivatePressurePlate();
                 break;
         }
     }
