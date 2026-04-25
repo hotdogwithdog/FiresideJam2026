@@ -49,7 +49,7 @@ namespace SoftBodyControllers
                 
                 _points[i].GetComponent<CircleCollider2D>().radius = _pointRadius;
                 _points[i].transform.SetParent(this.transform);
-                _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f).normalized * _radius;
+                _points[i].transform.localPosition = new Vector3(MathF.Cos(t), MathF.Sin(t), 0f) * _radius;
                 
                 t += interval;
             }
@@ -111,22 +111,6 @@ namespace SoftBodyControllers
                 return true;
             }
             return false;
-        }
-
-        private void ClearPointsObjects()
-        {
-            if (_points != null)
-            {
-                for (int i = 0; i < _points.Length; ++i)
-                {
-                    #if UNITY_EDITOR
-                        DestroyImmediate(_points[i]);
-                    #else
-                        Destroy(_points[i]);
-                    #endif
-                }
-            }
-            _points = null;
         }
         
         // Used by the editor to have the button
