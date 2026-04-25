@@ -46,12 +46,14 @@ namespace SoftBodyControllers
 
         protected float _targetAreaBase;
         protected float _targetArea;
+        
 
         #region PublicInterface
         
         public Vector2 Anchor => _anchor.position;
         
         public Action<MassInteraction.IMass> OnSoftBodyCollisionEnter;
+        public Transform Anchor => _anchor;
 
         public void Teleport(Vector2 position)
         {
