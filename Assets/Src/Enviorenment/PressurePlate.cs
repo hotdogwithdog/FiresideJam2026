@@ -1,46 +1,70 @@
 using System;
+using Enviorenment;
+using MassInteraction;
 using UnityEngine;
 
-public class PressurePlate : MonoBehaviour
+public class PressurePlate : ASoftBodyInteract
 {
+    [SerializeField] private ButtonMode _buttonMode = ButtonMode.PressurePlate;
     [SerializeField] private GameObject[] _objectsToActivate;
-    private int _playerColliderCount;
     private IActivable[] _activables;
+    
+    [Header("Sprites")]
+    [SerializeField] private Sprite _activeSprite;
+    [SerializeField] private Sprite _DeactiveSprite;
+    
+    
+    [SerializeField] private bool _isActive;
 
+    private enum ButtonMode
+    {
+        PressurePlate,
+        Button
+    }
+
+    private SpriteRenderer _spriteRenderer;
     private void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _activables = new IActivable[_objectsToActivate.Length];
         for (int i = 0; i < _objectsToActivate.Length; i++)
         {
             _activables[i] = _objectsToActivate[i].GetComponent<IActivable>();
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    
+    protected override void OnSoftBodyEntered(IMass softBodyMass)
     {
-        if (!other.CompareTag("Player")) return;
-        
-        if (_playerColliderCount == 0) ActivatePressurePlate();
-            
-        _playerColliderCount++;
-        
+        if (_isActive) return;
+        ActivatePressurePlate();
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    protected override void OnSoftBodyStay(IMass softBodyMass)
     {
-        if (!other.CompareTag("Player")) return;
-        
-        _playerColliderCount--;
+       
+    }
 
-        if (_playerColliderCount == 0) DeactivatePressurePlate();
+    protected override void OnSoftBodyExit(IMass softBodyMass)
+    {
+        switch (_buttonMode)
+        {
+            case ButtonMode.PressurePlate:
+                
+                break;
+            case ButtonMode.Button:
+                DeactivatePressurePlate();
+                break;
+        }
     }
 
     private void DeactivatePressurePlate()
     {
         foreach (IActivable obj in _activables)
         {
-            obj.DeActivate();
+            obj.SwapState();
         }
+        _spriteRenderer.sprite = _DeactiveSprite;
+        _isActive = false;
     }
 
 
@@ -48,7 +72,9 @@ public class PressurePlate : MonoBehaviour
     {
         foreach (IActivable obj in _activables)
         {
-            obj.Activate();
+            obj.SwapState();
         }
+        _isActive = true;
+        _spriteRenderer.sprite = _activeSprite;
     }
 }
