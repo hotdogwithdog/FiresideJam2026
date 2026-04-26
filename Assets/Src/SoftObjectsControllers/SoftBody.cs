@@ -115,6 +115,7 @@ namespace SoftBodyControllers
         protected void Awake()
         {
             _spriteShapeController = GetComponent<SpriteShapeController>();
+            GetComponent<SpriteShapeRenderer>().allowOcclusionWhenDynamic = false;
             CreatePoints(); // Just if the child overrides the function it will do anything
             InitPointJointsDistances();
             _targetAreaBase = CalculateArea();
@@ -235,7 +236,6 @@ namespace SoftBodyControllers
         private void LateUpdate()
         {
             UpdateSpline();
-            _spriteShapeController.RefreshSpriteShape();
         }
 
         private void UpdateSpline()
