@@ -8,6 +8,7 @@ TagManager:
   - Catapult
   - MassBall
   - Canvas
+  - Reseteable
   layers:
   - Default
   - TransparentFX

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MassInteraction;
 using UnityEngine;
 
-namespace Enviorenment
+namespace Environment
 {
     public abstract class ASoftBodyInteract: MonoBehaviour
     {
@@ -19,7 +18,12 @@ namespace Enviorenment
                 this.count = count;
             }
         }
-        
+
+        protected void Restart()
+        {
+            _softBodyDataDictionary.Clear();
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             IMass mass = other.gameObject.GetComponentInParent<IMass>(); 

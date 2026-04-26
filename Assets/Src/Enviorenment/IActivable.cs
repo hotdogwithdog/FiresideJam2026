@@ -1,8 +1,12 @@
 using UnityEngine;
 
-public interface IActivable
+namespace Environment
 {
-    public void Activate();
-    public void DeActivate();
-    public void SwapState();
+    public interface IActivable
+    {
+        public void Activate();
+        public void DeActivate();
+        public void SwapState();
+    }
 }
+

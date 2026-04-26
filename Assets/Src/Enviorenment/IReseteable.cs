@@ -1,7 +1,11 @@
 using UnityEngine;
 
-public interface IReseteable
+namespace Environment
 {
+    public interface IReseteable
+    {
 
-    public void ResetState();
+        public void ResetState();
+    }
 }
+

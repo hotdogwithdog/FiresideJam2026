@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8389943773975599831}
   m_Layer: 3
   m_Name: Pressure Plate
-  m_TagString: PressurePlate
+  m_TagString: Reseteable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
