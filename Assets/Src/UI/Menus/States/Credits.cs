@@ -6,7 +6,6 @@ namespace UI.Menus.States
     public class Credits: AMenuState
     {
         public Credits() : base("Menus/Credits") { }
-
         
 
         protected override void OnOptionsClicked(NavigationActions action)
@@ -14,7 +13,7 @@ namespace UI.Menus.States
             switch (action)
             {
                 case NavigationActions.Back:
-                    MenuManager.Instance.SetState(MenuManager.Instance.PreviousState);
+                    OnEscPressed();
                     break;
                 default:
                     Debug.LogWarning($"Credits::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
@@ -24,7 +23,7 @@ namespace UI.Menus.States
 
         protected override void OnEscPressed()
         {
-            MenuManager.Instance.SetState(MenuManager.Instance.PreviousState);
+            MenuManager.Instance.ChangeSceneAndState("MainMenuScene", new Main());
         }
         
         public override void Update(float deltaTime) { }

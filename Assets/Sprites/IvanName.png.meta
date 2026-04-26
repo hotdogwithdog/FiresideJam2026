@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 957ee4ed7a461794abf54b39071b17da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2141760062058036340
+    second: IvanName_0
+  - first:
+      213: -4166609226945040032
+    second: IvanName_1
+  - first:
+      213: -5739633930653743579
+    second: IvanName_2
+  - first:
+      213: -3483448864497257147
+    second: IvanName_3
+  - first:
+      213: -7843357806111569142
+    second: IvanName_4
+  - first:
+      213: -6880097572658590280
+    second: IvanName_5
+  - first:
+      213: 5928187515970042540
+    second: IvanName_6
+  - first:
+      213: -1182701090952153297
+    second: IvanName_7
+  - first:
+      213: 8022758199258768863
+    second: IvanName_8
+  - first:
+      213: 4902831865005674161
+    second: IvanName_9
+  - first:
+      213: -8981222063781373998
+    second: IvanName_10
+  - first:
+      213: 6353944207323038440
+    second: IvanName_11
+  - first:
+      213: -2702529882633697695
+    second: IvanName_12
+  - first:
+      213: -8615156327706286151
+    second: IvanName_13
+  - first:
+      213: -3013414342785546607
+    second: IvanName_14
+  - first:
+      213: 2352367167350251610
+    second: IvanName_15
+  - first:
+      213: -5415911436950164540
+    second: IvanName_16
+  - first:
+      213: 1027752083509537999
+    second: IvanName_17
+  - first:
+      213: -5229283475072018964
+    second: IvanName_18
+  - first:
+      213: 6687990201559774588
+    second: IvanName_19
+  - first:
+      213: 5299556863503825212
+    second: IvanName_20
+  - first:
+      213: -4030945655158847788
+    second: IvanName_21
+  - first:
+      213: 7140720429823192346
+    second: IvanName_22
+  - first:
+      213: 5349128108650455578
+    second: IvanName_23
+  - first:
+      213: 4048148533280530167
+    second: IvanName_24
+  - first:
+      213: -2900659708955647551
+    second: IvanName_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IvanName_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 172
+        width: 76
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8389e23290f642e0800000000000000
+      internalID: -2141760062058036340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 176
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0617316dbfa3d26c0800000000000000
+      internalID: -4166609226945040032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 260
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526ca969959b850b0800000000000000
+      internalID: -5739633930653743579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 186
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545376eb6bd48afc0800000000000000
+      internalID: -3483448864497257147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_4
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 178
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bce6891abc62390800000000000000
+      internalID: -7843357806111569142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 178
+        width: 70
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd48a1c5bbf480a0800000000000000
+      internalID: -6880097572658590280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_6
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 248
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caabc4b0327254250800000000000000
+      internalID: 5928187515970042540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 182
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27745ebf93369fe0800000000000000
+      internalID: -1182701090952153297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_8
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 174
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5eba96310965f60800000000000000
+      internalID: 8022758199258768863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_9
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 174
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be012bda9b5a0440800000000000000
+      internalID: 4902831865005674161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_10
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 176
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d719671e1a4c5380800000000000000
+      internalID: -8981222063781373998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_11
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 180
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e20428879ebd2850800000000000000
+      internalID: 6353944207323038440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 38
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1668dbee36fae7ad0800000000000000
+      internalID: -2702529882633697695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_13
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 46
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7ab9a07f0d07880800000000000000
+      internalID: -8615156327706286151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_14
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 52
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1964339fe933e26d0800000000000000
+      internalID: -3013414342785546607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 52
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50243fa97945a020800000000000000
+      internalID: 2352367167350251610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_16
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 52
+        width: 92
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb2c992e31d6d4b0800000000000000
+      internalID: -5415911436950164540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 122
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcce0ce131f434e00800000000000000
+      internalID: 1027752083509537999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_18
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 58
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce51386a26add67b0800000000000000
+      internalID: -5229283475072018964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_19
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 56
+        width: 44
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75734167a380dc50800000000000000
+      internalID: 6687990201559774588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_20
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 56
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39f02c93eecb8940800000000000000
+      internalID: 5299556863503825212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_21
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 60
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d64a5398443f08c0800000000000000
+      internalID: -4030945655158847788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 48
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d6cf3d56fe81360800000000000000
+      internalID: 7140720429823192346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 50
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12ea268cabeb3a40800000000000000
+      internalID: 5349128108650455578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_24
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 56
+        width: 14
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe543c94a9ed2830800000000000000
+      internalID: 4048148533280530167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IvanName_25
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 58
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c12961fc59ceb7d0800000000000000
+      internalID: -2900659708955647551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IvanName_0: -2141760062058036340
+      IvanName_1: -4166609226945040032
+      IvanName_10: -8981222063781373998
+      IvanName_11: 6353944207323038440
+      IvanName_12: -2702529882633697695
+      IvanName_13: -8615156327706286151
+      IvanName_14: -3013414342785546607
+      IvanName_15: 2352367167350251610
+      IvanName_16: -5415911436950164540
+      IvanName_17: 1027752083509537999
+      IvanName_18: -5229283475072018964
+      IvanName_19: 6687990201559774588
+      IvanName_2: -5739633930653743579
+      IvanName_20: 5299556863503825212
+      IvanName_21: -4030945655158847788
+      IvanName_22: 7140720429823192346
+      IvanName_23: 5349128108650455578
+      IvanName_24: 4048148533280530167
+      IvanName_25: -2900659708955647551
+      IvanName_3: -3483448864497257147
+      IvanName_4: -7843357806111569142
+      IvanName_5: -6880097572658590280
+      IvanName_6: 5928187515970042540
+      IvanName_7: -1182701090952153297
+      IvanName_8: 8022758199258768863
+      IvanName_9: 4902831865005674161
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

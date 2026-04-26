@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 5a7c1424639e6d543905bb2df31071c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5939132590378623209
+    second: MiguelName_0
+  - first:
+      213: -3562904547324727066
+    second: MiguelName_1
+  - first:
+      213: 1069042012888008876
+    second: MiguelName_2
+  - first:
+      213: -8400635046661223826
+    second: MiguelName_3
+  - first:
+      213: -2693865469266318570
+    second: MiguelName_4
+  - first:
+      213: -6701422159669987625
+    second: MiguelName_5
+  - first:
+      213: -5472873787357634447
+    second: MiguelName_6
+  - first:
+      213: 6277011727759350253
+    second: MiguelName_7
+  - first:
+      213: 417057180663287186
+    second: MiguelName_8
+  - first:
+      213: -1424867906293347205
+    second: MiguelName_9
+  - first:
+      213: 4305154008527381729
+    second: MiguelName_10
+  - first:
+      213: 5644144397414943602
+    second: MiguelName_11
+  - first:
+      213: -4466616714646904270
+    second: MiguelName_12
+  - first:
+      213: 5356957759768160869
+    second: MiguelName_13
+  - first:
+      213: 785525057437266725
+    second: MiguelName_14
+  - first:
+      213: -7379937131173208524
+    second: MiguelName_15
+  - first:
+      213: -784684557330963785
+    second: MiguelName_16
+  - first:
+      213: -5311938553942769782
+    second: MiguelName_17
+  - first:
+      213: 8845093237838036920
+    second: MiguelName_18
+  - first:
+      213: -4588780901094275438
+    second: MiguelName_19
+  - first:
+      213: 7583332567323259916
+    second: MiguelName_20
+  - first:
+      213: -8395065878687351515
+    second: MiguelName_21
+  - first:
+      213: 1396651568765605000
+    second: MiguelName_22
+  - first:
+      213: -7431948937610213839
+    second: MiguelName_23
+  - first:
+      213: -1477598449926467484
+    second: MiguelName_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiguelName_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 158
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f598c3066f39da0800000000000000
+      internalID: -5939132590378623209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 253
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0f518f0350e8ec0800000000000000
+      internalID: -3562904547324727066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 172
+        width: 66
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca88824fb0006de00800000000000000
+      internalID: 1069042012888008876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 183
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a8f0cfee2fa6b80800000000000000
+      internalID: -8400635046661223826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_4
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 173
+        width: 40
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ba0bfd0a77d9ad0800000000000000
+      internalID: -2693865469266318570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_5
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 172
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d670fa2d04cff2a0800000000000000
+      internalID: -6701422159669987625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 237
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170600479427c04b0800000000000000
+      internalID: -5472873787357634447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 167
+        width: 24
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de99e0cc8ec6c1750800000000000000
+      internalID: 6277011727759350253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 170
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d0670db4fa9c500800000000000000
+      internalID: 417057180663287186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_9
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 167
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cc781403ad93ce0800000000000000
+      internalID: -1424867906293347205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_10
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 170
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4af95d2cafebb30800000000000000
+      internalID: 4305154008527381729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_11
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 169
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bcdecec67045e40800000000000000
+      internalID: 5644144397414943602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_12
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 174
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23226af53c36302c0800000000000000
+      internalID: -4466616714646904270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 156
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ae0cb33bcb75a40800000000000000
+      internalID: 5356957759768160869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_14
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 37
+        width: 65
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52377bab0eeb6ea00800000000000000
+      internalID: 785525057437266725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_15
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 138
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e94bf9742359990800000000000000
+      internalID: -7379937131173208524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_16
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 131
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2ad837d8d3c15f0800000000000000
+      internalID: -784684557330963785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 48
+        width: 65
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ff98f67043846b0800000000000000
+      internalID: -5311938553942769782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_18
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 59
+        width: 19
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfbb8ebf6510ca70800000000000000
+      internalID: 8845093237838036920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 52
+        width: 138
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296cd2635106150c0800000000000000
+      internalID: -4588780901094275438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_20
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 44
+        width: 51
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0434f0bac86d3960800000000000000
+      internalID: 7583332567323259916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 42
+        width: 61
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d76d2ff0cbe7b80800000000000000
+      internalID: -8395065878687351515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_22
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 41
+        width: 60
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8841447b337e16310800000000000000
+      internalID: 1396651568765605000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 38
+        width: 61
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136c6e041d96cd890800000000000000
+      internalID: -7431948937610213839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiguelName_24
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 37
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4601777d9048e7be0800000000000000
+      internalID: -1477598449926467484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MiguelName_0: -5939132590378623209
+      MiguelName_1: -3562904547324727066
+      MiguelName_10: 4305154008527381729
+      MiguelName_11: 5644144397414943602
+      MiguelName_12: -4466616714646904270
+      MiguelName_13: 5356957759768160869
+      MiguelName_14: 785525057437266725
+      MiguelName_15: -7379937131173208524
+      MiguelName_16: -784684557330963785
+      MiguelName_17: -5311938553942769782
+      MiguelName_18: 8845093237838036920
+      MiguelName_19: -4588780901094275438
+      MiguelName_2: 1069042012888008876
+      MiguelName_20: 7583332567323259916
+      MiguelName_21: -8395065878687351515
+      MiguelName_22: 1396651568765605000
+      MiguelName_23: -7431948937610213839
+      MiguelName_24: -1477598449926467484
+      MiguelName_3: -8400635046661223826
+      MiguelName_4: -2693865469266318570
+      MiguelName_5: -6701422159669987625
+      MiguelName_6: -5472873787357634447
+      MiguelName_7: 6277011727759350253
+      MiguelName_8: 417057180663287186
+      MiguelName_9: -1424867906293347205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
