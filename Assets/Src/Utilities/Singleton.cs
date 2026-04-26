@@ -15,12 +15,12 @@ namespace Utilities
             }
             else
             {
-                UnityEngine.Debug.LogError($"The Singleton of type: {typeof(T)}, already exists, Destroying the new object");
-                Destroy(this.gameObject);
+                UnityEngine.Debug.LogWarning($"The Singleton of type: {typeof(T)}, already exists, Destroying the new object");
+                Destroy(this);
                 return;
             }
 
-            DontDestroyOnLoad(Instance);
+            DontDestroyOnLoad(this);
         }
     }
 }

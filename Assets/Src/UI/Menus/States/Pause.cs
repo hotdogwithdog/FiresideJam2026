@@ -26,7 +26,7 @@ namespace UI.Menus.States
                     MenuManager.Instance.SetState(new Options());
                     break;
                 case NavigationActions.MainMenu:
-                    MenuManager.Instance.SetState(new Main());
+                    MenuManager.Instance.ChangeSceneAndState("MainMenuScene", new Main());
                     break;
                 default:
                     Debug.LogWarning($"Pause::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
