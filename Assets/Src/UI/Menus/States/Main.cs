@@ -18,7 +18,7 @@ namespace UI.Menus.States
                     MenuManager.Instance.SetState(new Options());
                     break;
                 case NavigationActions.Credits:
-                    MenuManager.Instance.SetState(new Credits());
+                    MenuManager.Instance.ChangeSceneAndState("Credits", new Credits());
                     break;
                 case NavigationActions.Exit:
                     #if UNITY_EDITOR

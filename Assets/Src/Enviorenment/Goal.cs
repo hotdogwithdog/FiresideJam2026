@@ -1,4 +1,5 @@
 using System.Collections;
+using LevelControl;
 using Audio;
 using Player;
 using UI.Menus;
@@ -65,6 +66,11 @@ namespace Environment
         private void Win()
         {
             AudioManager.Instance.PlayOneShot2D(_activateAudioClip,2f);
+            if (LevelManager.Instance.CurrentLevel == 6)
+            {
+                MenuManager.Instance.ChangeSceneAndState("Credits", new Credits());
+                return;
+            }
             MenuManager.Instance.SetState(new EndLevel());
             Debug.Log("Win");
             _isActivated = true;

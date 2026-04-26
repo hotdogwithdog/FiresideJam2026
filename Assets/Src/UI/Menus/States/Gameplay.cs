@@ -10,6 +10,8 @@ namespace UI.Menus.States
         {
             InputReader.Instance.onPause += OnPause;
             
+            InputReader.Instance.EnablePlayerActions();
+            
             Time.timeScale = 1f;
         }
 
@@ -21,6 +23,7 @@ namespace UI.Menus.States
         public void Exit()
         {
             InputReader.Instance.onPause -= OnPause;
+            InputReader.Instance.EnableJustCommonActions();
         }
 
         public void Update(float deltaTime) { }

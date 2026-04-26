@@ -17,7 +17,7 @@ namespace UI.Menus.States
                     GoToNextLevel();
                     break;
                 case NavigationActions.MainMenu:
-                    MenuManager.Instance.SetState(new Main());
+                    MenuManager.Instance.ChangeSceneAndState("MainMenuScene", new Main());
                     break;
                 default:
                     Debug.LogWarning($"EndLevel::OnOptionsClicked: The Navigation action is undefined in this menu -> navigation action {action}");
