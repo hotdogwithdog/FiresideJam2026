@@ -14,6 +14,7 @@ namespace Player
         [Header("Movement")]
         [SerializeField] private float _jumpForce = 5f;
         [SerializeField] private float _movementForce = 2f;
+        [SerializeField] private float _maxSpeed = 5f;
         [SerializeField] private float _extraOffsetForRaycastToTheGround = 0.5f;
         [SerializeField] private LayerMask _groundMask;
         
@@ -30,6 +31,7 @@ namespace Player
         [SerializeField] private GameObject _massBallPrefab;
         [SerializeField] private float _throwMassCantity = 5f;
         [SerializeField] private float _throwForce = 2f;
+        [SerializeField] private float _throwOffset = 1.5f;
         [SerializeField] private float _timeOfIgnoreCollisionsWithThrowMass = 0.2f;
         
         #region publicInterface
@@ -66,7 +68,7 @@ namespace Player
             Vector2 throwDirection = (mousePosWorldSpace - anchor).normalized;
             
             GameObject massBallGameObject = Instantiate(_massBallPrefab);
-            massBallGameObject.transform.position = anchor + throwDirection * 3f;
+            massBallGameObject.transform.position = anchor + throwDirection * _throwOffset;
             MassBall massBall = massBallGameObject.GetComponent<MassBall>();
             massBall.Init(_throwMassCantity);
             
@@ -76,10 +78,15 @@ namespace Player
 
         private void FixedUpdate()
         {
+            Vector2 averageVelocity = _playerSoftBody.GetAverageVelocity();
+            float speedFactor = 1f - Mathf.Clamp01(averageVelocity.magnitude / _maxSpeed);
+            
             foreach (GameObject point in _playerSoftBody.Points)
             {
                 float weight = Mathf.Clamp01(1f - (point.transform.position.y - _playerAnchor.position.y));
-                point.GetComponent<Rigidbody2D>().AddForce(_movementDirection * (_movementForce * weight));
+                
+                Vector2 force = _movementDirection * (_movementForce * weight * speedFactor);
+                point.GetComponent<Rigidbody2D>().AddForce(force);
             }
         }
 

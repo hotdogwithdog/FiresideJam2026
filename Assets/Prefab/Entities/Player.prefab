@@ -1029,6 +1029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player.BasicPlayerMovement
   _jumpForce: 0.5
   _movementForce: 1
+  _maxSpeed: 7
   _extraOffsetForRaycastToTheGround: 0.5
   _groundMask:
     serializedVersion: 2
@@ -1038,7 +1039,8 @@ MonoBehaviour:
   _maxMass: 200
   _massBallPrefab: {fileID: 5047699590344100289, guid: e449df9d7efa5ed469629dc12cc4c5d0, type: 3}
   _throwMassCantity: 5
-  _throwForce: 2
+  _throwForce: 1.5
+  _throwOffset: 1.5
   _timeOfIgnoreCollisionsWithThrowMass: 0.2
 --- !u!1971053207 &2720709350826701226
 SpriteShapeRenderer:

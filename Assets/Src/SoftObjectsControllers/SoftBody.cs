@@ -64,6 +64,18 @@ namespace SoftBodyControllers
                 rb.position = rb.position - (new Vector2(_anchor.position.x, _anchor.position.y) - position);
             }
         }
+        
+        public Vector2 GetAverageVelocity()
+        {
+            Vector2 sum = Vector2.zero;
+
+            foreach (GameObject point in _points)
+            {
+                sum += point.GetComponent<Rigidbody2D>().linearVelocity;
+            }
+            
+            return sum / _points.Length;
+        }
 
         public void AddForce(Vector2 force, float scaleForFarPoints, ForceMode2D forceMode)
         {
