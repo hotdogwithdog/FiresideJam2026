@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Audio;
 using UnityEngine;
 
 namespace Environment
@@ -12,6 +13,8 @@ namespace Environment
     
         [Header("Timer")]
         [SerializeField] private float _catapultTimer = 1f;
+        
+        [Header("Audio")] [SerializeField] private AudioClip _audioClip;
 
         #region Hinge
         private HingeJoint2D _hinge;
@@ -65,6 +68,8 @@ namespace Environment
             _motor.maxMotorTorque = motorForce;
             _hinge.motor = _motor;
             _hinge.useMotor = true;
+            
+            AudioManager.Instance.PlayOneShot2D(_audioClip,1f);
        
             StartCoroutine(ResetCatapult());
         }

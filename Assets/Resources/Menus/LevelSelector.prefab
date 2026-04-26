@@ -541,6 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 11
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &3275189269837317446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,6 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 14
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &5808930830206372345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,6 +872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 6
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &1127460187736977895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,6 +1001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 10
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &1155633250082226314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 13
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &1659099060121350630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,6 +1183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 15
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &2510995983188844491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 12
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &5791636180518931510
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 8
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &372372462755047636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 2
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &3859809941414304238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 1
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &5022438690198996732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,6 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 3
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &8294708797023221421
 MonoBehaviour:
   m_ObjectHideFlags: 0

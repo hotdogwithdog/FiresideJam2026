@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 6
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!1 &5448821434504805864
 GameObject:
   m_ObjectHideFlags: 0

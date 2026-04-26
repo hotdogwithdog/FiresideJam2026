@@ -1,4 +1,5 @@
 using System.Collections;
+using Audio;
 using Player;
 using UI.Menus;
 using UI.Menus.States;
@@ -25,6 +26,9 @@ namespace Environment
         private float _defaultSpringDistance;
     
         private int _playerColliderCount = 0;
+        
+        [Header("Audio")]
+        [SerializeField] private AudioClip _activateAudioClip;
     
         private void Awake()
         {
@@ -60,6 +64,7 @@ namespace Environment
     
         private void Win()
         {
+            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,2f);
             MenuManager.Instance.SetState(new EndLevel());
             Debug.Log("Win");
             _isActivated = true;

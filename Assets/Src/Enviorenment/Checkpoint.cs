@@ -1,4 +1,5 @@
 using System.Collections;
+using Audio;
 using Player;
 using UnityEngine;
 
@@ -26,6 +27,9 @@ namespace Environment
         
         private int _playerColliderCount = 0;
         private IActivable[] _activables;
+        
+        [Header("Audio")]
+        [SerializeField] private AudioClip _activateAudioClip;
         
         private void Awake()
         {
@@ -67,8 +71,10 @@ namespace Environment
             data.position = _spawnPoint.position;
             data.mass = _playerController.GetMass();
             CheckpointManager.Instance.SetCheckpoint(data);
-            
+
             _isActivated = true;
+            
+            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,2f);
         }
     
         public void Activate()

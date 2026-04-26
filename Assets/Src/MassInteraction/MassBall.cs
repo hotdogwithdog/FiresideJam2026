@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Audio;
 using SoftBodyControllers;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace MassInteraction
     [RequireComponent(typeof(SoftBody))]
     public class MassBall : MonoBehaviour, IMass
     {
+        [Header("Audio")][SerializeField] private AudioClip _absorbAudioClip;
         [SerializeField] private float _mass = 5f;
 
         private bool _isBeingAbsorbed = false;
@@ -80,6 +82,8 @@ namespace MassInteraction
             _softBody.SetScale(targetScale);
             
             _isBeingAbsorbed = false;
+            
+            AudioManager.Instance.PlayOneShot2D(_absorbAudioClip,1f);
         }
 
         public void BeAbsorbed()

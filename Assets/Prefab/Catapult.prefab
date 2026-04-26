@@ -156,6 +156,7 @@ MonoBehaviour:
   motorSpeed: 700
   motorForce: 700
   _catapultTimer: 1
+  _audioClip: {fileID: 8300000, guid: 03979ec7529cdeb4b8f7a6b806dc65c0, type: 3}
 --- !u!50 &8037507648518686045
 Rigidbody2D:
   serializedVersion: 5

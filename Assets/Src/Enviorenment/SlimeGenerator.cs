@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Audio;
 using MassInteraction;
 using UnityEngine;
 
@@ -19,7 +20,8 @@ namespace Environment
         
         [SerializeField] private bool _isActive;
         private bool _isActiveStartState;
-
+        [Header("Audio")]
+        [SerializeField] private AudioClip _activateAudioClip;
         private void Start()
         {
             _isActiveStartState = _isActive;
@@ -44,6 +46,7 @@ namespace Environment
                 massBallGameObject.transform.position = _spawnPoint.position;
                 MassBall massBall = massBallGameObject.GetComponent<MassBall>();
                 massBall.Init(_massQuantity);
+                AudioManager.Instance.PlayOneShot2D(_activateAudioClip,1f);
                 yield return new WaitForSeconds(_interval);
                 _massBallQuantity--;
             }

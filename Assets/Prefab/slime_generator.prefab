@@ -111,6 +111,7 @@ MonoBehaviour:
   _massBallQuantity: 5
   _spawnPoint: {fileID: 6367777443672708537}
   _isActive: 1
+  _activateAudioClip: {fileID: 8300000, guid: 80ef6fd266b3ef64eac806bd157e7249, type: 3}
 --- !u!1 &6434777142420648244
 GameObject:
   m_ObjectHideFlags: 0

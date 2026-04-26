@@ -156,3 +156,5 @@ MonoBehaviour:
   _activeSprite: {fileID: 21300000, guid: b4a925949877dd74a9a30a07f4437b05, type: 3}
   _DeactiveSprite: {fileID: 21300000, guid: 31c42cd360cbb324caad8751950393f9, type: 3}
   _isActive: 0
+  _activateAudioClip: {fileID: 8300000, guid: e5080cf008964ab4c91f17606a3c2160, type: 3}
+  _deActivateAudioClip: {fileID: 8300000, guid: 810a854db07a51f40aabfcd1a4e13cc5, type: 3}

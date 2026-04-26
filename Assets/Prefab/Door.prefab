@@ -152,8 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   _finalPosition: {fileID: 7837587107893225976}
-  _animationTime: 2
+  _animationTime: 1
   _isOpen: 0
+  _activateAudioClip: {fileID: 8300000, guid: 1771e1ef1c397cf4fbf5284c1a41b02e, type: 3}
 --- !u!1 &5819775344515633176
 GameObject:
   m_ObjectHideFlags: 0

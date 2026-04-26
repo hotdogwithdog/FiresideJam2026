@@ -1042,6 +1042,9 @@ MonoBehaviour:
   _throwForce: 1.5
   _throwOffset: 1.5
   _timeOfIgnoreCollisionsWithThrowMass: 0.2
+  _throwAudioClip: {fileID: 8300000, guid: 80ef6fd266b3ef64eac806bd157e7249, type: 3}
+  _absorbAudioClip: {fileID: 8300000, guid: 3e3edb05bb5b9e44fa8a5dc24174ef06, type: 3}
+  _jumpAudioClip: {fileID: 8300000, guid: 9f839e67ecb446f4c80da2c636acbe4f, type: 3}
 --- !u!1971053207 &2720709350826701226
 SpriteShapeRenderer:
   serializedVersion: 2
@@ -1403,6 +1406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4321341937610728605}
+  - component: {fileID: 8785131650075239781}
   m_Layer: 0
   m_Name: Anchor
   m_TagString: Untagged
@@ -1425,6 +1429,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 624788460315263872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &8785131650075239781
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516812530989123666}
+  m_Enabled: 1
 --- !u!1 &4285514649702129264
 GameObject:
   m_ObjectHideFlags: 0

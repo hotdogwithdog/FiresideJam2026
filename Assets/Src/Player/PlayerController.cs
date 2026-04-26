@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using Environment;
 using LevelControl;
 using MassInteraction;
@@ -42,6 +43,12 @@ namespace Player
         
         #endregion
 
+        
+        [Header("Audio")] 
+        [SerializeField] private AudioClip _throwAudioClip;
+        [SerializeField] private AudioClip _absorbAudioClip;
+        [SerializeField] private AudioClip _jumpAudioClip;
+        
         private void Start()
         {
             Inputs.InputReader.Instance.onMove += OnMove;
@@ -59,7 +66,6 @@ namespace Player
         {
             if (_mass <= _throwMassCantity)
             {
-                // TODO: Add a Sound of action rejected
                 Debug.Log("PlayerController::OnShootMass: Mass insuficent, rejectMassThrow");
                 return;
             }
@@ -74,6 +80,8 @@ namespace Player
             
             ReduceMass(_throwMassCantity);
             massBall.Throw(throwDirection * _throwForce, _playerSoftBody, _timeOfIgnoreCollisionsWithThrowMass);
+            
+            AudioManager.Instance.PlayOneShot2D(_throwAudioClip,1f);
         }
 
         private void FixedUpdate()
@@ -96,6 +104,7 @@ namespace Player
             Debug.DrawLine(_playerAnchor.position, _playerAnchor.position + Vector3.down * (_playerSoftBody.Scale * 0.75f + _extraOffsetForRaycastToTheGround), Color.blue, 1f);
             if (!isGrounded) return;
             _playerSoftBody.AddForce(Vector2.up * _jumpForce, 1.5f, ForceMode2D.Impulse);
+            AudioManager.Instance.PlayOneShot2D(_jumpAudioClip,1f);
         }
         
         private void OnRespawnRequest()
@@ -137,6 +146,8 @@ namespace Player
             float targetScale = Utilities.Maths.GetScaleFromMass(_mass);
             
             _playerSoftBody.SetScale(targetScale);
+            
+            AudioManager.Instance.PlayOneShot2D(_absorbAudioClip,0.7f);
         }
 
         public void BeAbsorbed() { }

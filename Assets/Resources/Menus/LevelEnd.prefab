@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 7
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &5270897981439140102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 9
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &8338011229228142985
 MonoBehaviour:
   m_ObjectHideFlags: 0

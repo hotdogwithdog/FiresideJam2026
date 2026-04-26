@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using MassInteraction;
 using UnityEngine;
 
@@ -17,6 +18,10 @@ namespace Environment
         
         [SerializeField] private bool _isActive;
         private bool _isActiveStartState;
+
+        [Header("Audio")] 
+        [SerializeField] private AudioClip _activateAudioClip;
+        [SerializeField] private AudioClip _deActivateAudioClip;
         
         private enum ButtonMode
         {
@@ -66,6 +71,7 @@ namespace Environment
             }
             _spriteRenderer.sprite = _DeactiveSprite;
             _isActive = false;
+            AudioManager.Instance.PlayOneShot2D(_deActivateAudioClip,1f);
         }
 
 
@@ -75,6 +81,7 @@ namespace Environment
             {
                 obj.SwapState();
             }
+            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,1f);
             _isActive = true;
             _spriteRenderer.sprite = _activeSprite;
         }

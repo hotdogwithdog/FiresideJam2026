@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Environment
 {
+    [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(ParticleSystem))]
     [RequireComponent(typeof(Animator))]
     public class Fan : ASoftBodyInteract, IActivable, IReseteable
@@ -17,15 +18,26 @@ namespace Environment
         
         private ParticleSystem _particleSystem;
         private Animator _animator;
-    
+        
+        private AudioSource _audioSource;
         private void Start()
         {
             _isActiveStartState = _isActivated;
+            
+            _audioSource = GetComponent<AudioSource>();
             _particleSystem = GetComponent<ParticleSystem>();
             _animator = GetComponent<Animator>();
             _animator.SetBool("isActive", _isActivated);
-            if (_isActivated) _particleSystem.Play();
-            else _particleSystem.Stop();
+            if (_isActivated)
+            {
+                _particleSystem.Play();
+                _audioSource.Play();
+            }
+            else
+            {
+                _audioSource.Stop();
+                _particleSystem.Stop();
+            }
         }
     
         private void OnTriggerStay2D(Collider2D other)
@@ -43,6 +55,8 @@ namespace Environment
             _particleSystem.Play();
             _animator.SetBool("isActive", true);
             _isActivated = true;
+            
+            _audioSource.Play();
         }
     
         private void PushPlayer(GameObject softBody)
@@ -56,6 +70,8 @@ namespace Environment
             _particleSystem.Stop();
             _animator.SetBool("isActive", false);
             _isActivated = false;
+            
+            _audioSource.Stop();
         }
     
         public void SwapState()

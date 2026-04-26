@@ -282,6 +282,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 3021441302137222387}
   _animationTime: 2
   _minSpringDistance: 0.1
+  _activateAudioClip: {fileID: 8300000, guid: 3bdef47b85dd334489bf3268e9aba036, type: 3}
 --- !u!50 &1962249069392434817
 Rigidbody2D:
   serializedVersion: 5

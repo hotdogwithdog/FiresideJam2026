@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Audio;
 using UnityEngine;
 
 namespace Environment
@@ -7,8 +8,11 @@ namespace Environment
     public class Door : MonoBehaviour, IActivable, IReseteable
     {
         [SerializeField] private Transform _finalPosition;
-        [SerializeField] private float _animationTime = 2f;
+        [SerializeField] private float _animationTime = 1f;
         [SerializeField] private bool _isOpen;
+        
+        [Header("Audio")]
+        [SerializeField] private AudioClip _activateAudioClip;
 
         private bool _isOpenStartState;
 
@@ -30,6 +34,8 @@ namespace Environment
             if (_coroutine != null) StopCoroutine(_coroutine);
             _coroutine = StartCoroutine(MoveDoor(_finalPosition.position));
             _isOpen = true;
+            
+            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,5f);
         }
 
         private IEnumerator MoveDoor(Vector2 targetPosition)
@@ -54,6 +60,7 @@ namespace Environment
             if (_coroutine != null) StopCoroutine(_coroutine);
             _coroutine = StartCoroutine(MoveDoor(_originPosition));
             _isOpen = false;
+            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,5f);
         }
 
         public void SwapState()

@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d250486c194d28be1316cc54a096df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MassInteraction.MassBall
+  _absorbAudioClip: {fileID: 8300000, guid: 3e3edb05bb5b9e44fa8a5dc24174ef06, type: 3}
   _mass: 5
 --- !u!1971053207 &1274267487488744352
 SpriteShapeRenderer:
