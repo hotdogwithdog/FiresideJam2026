@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 5db02219faffe654d90fe711e195b21e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6721064938682105925
+    second: aim your mouse_0
+  - first:
+      213: -794829926745022782
+    second: aim your mouse_1
+  - first:
+      213: -1227157011670831092
+    second: aim your mouse_2
+  - first:
+      213: 5302874914841150233
+    second: aim your mouse_3
+  - first:
+      213: 5374345772078843534
+    second: aim your mouse_4
+  - first:
+      213: 6342994278662329249
+    second: aim your mouse_5
+  - first:
+      213: 5738114570779562870
+    second: aim your mouse_6
+  - first:
+      213: -625065954666428011
+    second: aim your mouse_7
+  - first:
+      213: -8301260055733734242
+    second: aim your mouse_8
+  - first:
+      213: 2581954782737403037
+    second: aim your mouse_9
+  - first:
+      213: 7134418692391375645
+    second: aim your mouse_10
+  - first:
+      213: -7148712186488648230
+    second: aim your mouse_11
+  - first:
+      213: -1494231521698417011
+    second: aim your mouse_12
+  - first:
+      213: 6409521626666052797
+    second: aim your mouse_13
+  - first:
+      213: 833218862955731193
+    second: aim your mouse_14
+  - first:
+      213: -6345085724116228383
+    second: aim your mouse_15
+  - first:
+      213: 2764804883997953472
+    second: aim your mouse_16
+  - first:
+      213: 6402827958390640998
+    second: aim your mouse_17
+  - first:
+      213: -2923040883588600453
+    second: aim your mouse_18
+  - first:
+      213: -8984660349150792654
+    second: aim your mouse_19
+  - first:
+      213: -6895596977317919042
+    second: aim your mouse_20
+  - first:
+      213: -7385165556912857777
+    second: aim your mouse_21
+  - first:
+      213: -7464505831514130726
+    second: aim your mouse_22
+  - first:
+      213: -1741670830053435877
+    second: aim your mouse_23
+  - first:
+      213: 7840205592009767435
+    second: aim your mouse_24
+  - first:
+      213: -5908326414926228441
+    second: aim your mouse_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aim your mouse_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 212
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf35894c0bf9b2a0800000000000000
+      internalID: -6721064938682105925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 206
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce538f846238f4f0800000000000000
+      internalID: -794829926745022782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 208
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00fabb133348fee0800000000000000
+      internalID: -1227157011670831092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 204
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913cf63a3a8979940800000000000000
+      internalID: 5302874914841150233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 212
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86c1e45103859a40800000000000000
+      internalID: 5374345772078843534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_5
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 210
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3d00890b7d60850800000000000000
+      internalID: 6342994278662329249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_6
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 196
+        width: 52
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6731fcfdcc0e1af40800000000000000
+      internalID: 5738114570779562870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_7
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 200
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599cae273d15357f0800000000000000
+      internalID: -625065954666428011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_8
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 204
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94f9d516fffbcc80800000000000000
+      internalID: -8301260055733734242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_9
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 208
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c0f23f132f4d320800000000000000
+      internalID: 2581954782737403037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_10
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 206
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1315ee300c820360800000000000000
+      internalID: 7134418692391375645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_11
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 198
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add86d2542caacc90800000000000000
+      internalID: -7148712186488648230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_12
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 228
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8679f8095c634be0800000000000000
+      internalID: -1494231521698417011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 62
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc2d99d5f133f850800000000000000
+      internalID: 6409521626666052797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_14
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 72
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f891aa2420309b00800000000000000
+      internalID: 833218862955731193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_15
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 68
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e666a0d62ab1f7a0800000000000000
+      internalID: -6345085724116228383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_16
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 50
+        width: 44
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd86f7b46f8e5620800000000000000
+      internalID: 2764804883997953472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_17
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 138
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66150d1ca1a6bd850800000000000000
+      internalID: 6402827958390640998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_18
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 52
+        width: 50
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7de1c5adc54f67d0800000000000000
+      internalID: -2923040883588600453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_19
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 56
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2347455e303105380800000000000000
+      internalID: -8984660349150792654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_20
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 54
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb645b4651bed40a0800000000000000
+      internalID: -6895596977317919042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_21
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 44
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d52c4ed0f928990800000000000000
+      internalID: -7385165556912857777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_22
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 44
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6b4c0be7fb86890800000000000000
+      internalID: -7464505831514130726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 40
+        width: 20
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16510b9b9754d7e0800000000000000
+      internalID: -1741670830053435877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_24
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 44
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0af5cd52710ecc60800000000000000
+      internalID: 7840205592009767435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aim your mouse_25
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 36
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724d345ed68610ea0800000000000000
+      internalID: -5908326414926228441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      aim your mouse_0: -6721064938682105925
+      aim your mouse_1: -794829926745022782
+      aim your mouse_10: 7134418692391375645
+      aim your mouse_11: -7148712186488648230
+      aim your mouse_12: -1494231521698417011
+      aim your mouse_13: 6409521626666052797
+      aim your mouse_14: 833218862955731193
+      aim your mouse_15: -6345085724116228383
+      aim your mouse_16: 2764804883997953472
+      aim your mouse_17: 6402827958390640998
+      aim your mouse_18: -2923040883588600453
+      aim your mouse_19: -8984660349150792654
+      aim your mouse_2: -1227157011670831092
+      aim your mouse_20: -6895596977317919042
+      aim your mouse_21: -7385165556912857777
+      aim your mouse_22: -7464505831514130726
+      aim your mouse_23: -1741670830053435877
+      aim your mouse_24: 7840205592009767435
+      aim your mouse_25: -5908326414926228441
+      aim your mouse_3: 5302874914841150233
+      aim your mouse_4: 5374345772078843534
+      aim your mouse_5: 6342994278662329249
+      aim your mouse_6: 5738114570779562870
+      aim your mouse_7: -625065954666428011
+      aim your mouse_8: -8301260055733734242
+      aim your mouse_9: 2581954782737403037
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

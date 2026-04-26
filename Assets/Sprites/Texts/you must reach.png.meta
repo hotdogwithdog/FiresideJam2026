@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: e28fa86f3190bcb4fb095cdc2f61b38a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2668388311233902565
+    second: you must reach_0
+  - first:
+      213: -4376855335580634623
+    second: you must reach_1
+  - first:
+      213: 8714418183095954967
+    second: you must reach_2
+  - first:
+      213: -5048850165060749412
+    second: you must reach_3
+  - first:
+      213: 7841746211008863357
+    second: you must reach_4
+  - first:
+      213: -1849511803012534162
+    second: you must reach_5
+  - first:
+      213: -3671224563051774390
+    second: you must reach_6
+  - first:
+      213: 9010180648557079865
+    second: you must reach_7
+  - first:
+      213: -4159950387223443069
+    second: you must reach_8
+  - first:
+      213: -2387355320141471827
+    second: you must reach_9
+  - first:
+      213: 8333126512149200726
+    second: you must reach_10
+  - first:
+      213: -8527167744072839066
+    second: you must reach_11
+  - first:
+      213: 4457067618091948148
+    second: you must reach_12
+  - first:
+      213: 5446099478764554772
+    second: you must reach_13
+  - first:
+      213: 796083955649732871
+    second: you must reach_14
+  - first:
+      213: 1475026869993471834
+    second: you must reach_15
+  - first:
+      213: 8695388756844561474
+    second: you must reach_16
+  - first:
+      213: -6353744738032199064
+    second: you must reach_17
+  - first:
+      213: -8117598483318758546
+    second: you must reach_18
+  - first:
+      213: 3898547451238861344
+    second: you must reach_19
+  - first:
+      213: -28307185981078814
+    second: you must reach_20
+  - first:
+      213: 5198681681658783444
+    second: you must reach_21
+  - first:
+      213: -2650862050747546382
+    second: you must reach_22
+  - first:
+      213: 2616693995569902820
+    second: you must reach_23
+  - first:
+      213: 880769604437550440
+    second: you must reach_24
+  - first:
+      213: 2301787503986068373
+    second: you must reach_25
+  - first:
+      213: 5328913514988194347
+    second: you must reach_26
+  - first:
+      213: 4199162946433784357
+    second: you must reach_27
+  - first:
+      213: -4804241753786903439
+    second: you must reach_28
+  - first:
+      213: 8810895681709270591
+    second: you must reach_29
+  - first:
+      213: -5638454750334253245
+    second: you must reach_30
+  - first:
+      213: 244944379432532335
+    second: you must reach_31
+  - first:
+      213: 4581401923141662507
+    second: you must reach_32
+  - first:
+      213: 3412335223506275974
+    second: you must reach_33
+  - first:
+      213: -6396028677340676182
+    second: you must reach_34
+  - first:
+      213: 887470227842221760
+    second: you must reach_35
+  - first:
+      213: 9213411118896815905
+    second: you must reach_36
+  - first:
+      213: 890181439630297631
+    second: you must reach_37
+  - first:
+      213: 8965249943971386734
+    second: you must reach_38
+  - first:
+      213: 8425721249775398990
+    second: you must reach_39
+  - first:
+      213: -1956866154367368112
+    second: you must reach_40
+  - first:
+      213: 7634144505199233504
+    second: you must reach_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: you must reach_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 232
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18491af7faf7fad0800000000000000
+      internalID: -2668388311233902565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 240
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102717903494243c0800000000000000
+      internalID: -4376855335580634623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 244
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ea3a3aa25dfe870800000000000000
+      internalID: 8714418183095954967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 236
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97b16b5681eee9b0800000000000000
+      internalID: -5048850165060749412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 236
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cd2fda1aa73dc60800000000000000
+      internalID: 7841746211008863357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 230
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60bb8570d63556e0800000000000000
+      internalID: -1849511803012534162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 238
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e3c9cf5b03d0dc0800000000000000
+      internalID: -3671224563051774390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_7
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 228
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93de757df879a0d70800000000000000
+      internalID: 9010180648557079865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_8
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 226
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3894c46c923e446c0800000000000000
+      internalID: -4159950387223443069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 226
+        width: 56
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf145e2cf86eded0800000000000000
+      internalID: -2387355320141471827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_10
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 230
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ffa09796635a370800000000000000
+      internalID: 8333126512149200726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_11
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 232
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6609e5a9d1a69a980800000000000000
+      internalID: -8527167744072839066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_12
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 228
+        width: 26
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4785444526faadd30800000000000000
+      internalID: 4457067618091948148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_13
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 130
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a833b0f9e649b40800000000000000
+      internalID: 5446099478764554772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 130
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701e3ebc3224c0b00800000000000000
+      internalID: 796083955649732871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_15
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 122
+        width: 46
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ffd1c8f19587410800000000000000
+      internalID: 1475026869993471834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 124
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24445a3110a3ca870800000000000000
+      internalID: 8695388756844561474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_17
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 128
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a551803d6f2d7a0800000000000000
+      internalID: -6353744738032199064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_18
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 122
+        width: 66
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e632984303f785f80800000000000000
+      internalID: -8117598483318758546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_19
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 126
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ac813604c6a1630800000000000000
+      internalID: 3898547451238861344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_20
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 126
+        width: 86
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2c10ba3ce6b9ff0800000000000000
+      internalID: -28307185981078814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_21
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 170
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d62a97127d652840800000000000000
+      internalID: 5198681681658783444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_22
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 122
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f401ac720f363bd0800000000000000
+      internalID: -2650862050747546382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_23
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 124
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e477db335d505420800000000000000
+      internalID: 2616693995569902820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_24
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 112
+        width: 26
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8652679e94f193c00800000000000000
+      internalID: 880769604437550440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_25
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 124
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bc58b1a8791ff10800000000000000
+      internalID: 2301787503986068373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 26
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a46abab9a14f940800000000000000
+      internalID: 5328913514988194347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 34
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a1b20a37c664a30800000000000000
+      internalID: 4199162946433784357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_28
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 32
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1749e623497e35db0800000000000000
+      internalID: -4804241753786903439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_29
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 28
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36ed4db0f6964a70800000000000000
+      internalID: 8810895681709270591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 34
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3478634474f20c1b0800000000000000
+      internalID: -5638454750334253245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_31
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 36
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69fdc58d97366300800000000000000
+      internalID: 244944379432532335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 40
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27762a96c8649f30800000000000000
+      internalID: 4581401923141662507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_33
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 40
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e05a37ecc0b5f20800000000000000
+      internalID: 3412335223506275974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_34
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 34
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafb5e93ecdbc37a0800000000000000
+      internalID: -6396028677340676182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 84
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6454f587de05c00800000000000000
+      internalID: 887470227842221760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_36
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 38
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f9a7f099c9cdf70800000000000000
+      internalID: 9213411118896815905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_37
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 36
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a4fce8d4f8a5c00800000000000000
+      internalID: 890181439630297631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_38
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 34
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e655109f257fa6c70800000000000000
+      internalID: 8965249943971386734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_39
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 30
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40b255d5dc2ee470800000000000000
+      internalID: 8425721249775398990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_40
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 34
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054c2fbb990d7d4e0800000000000000
+      internalID: -1956866154367368112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: you must reach_41
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 32
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e98664eafde1f960800000000000000
+      internalID: 7634144505199233504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      you must reach_0: -2668388311233902565
+      you must reach_1: -4376855335580634623
+      you must reach_10: 8333126512149200726
+      you must reach_11: -8527167744072839066
+      you must reach_12: 4457067618091948148
+      you must reach_13: 5446099478764554772
+      you must reach_14: 796083955649732871
+      you must reach_15: 1475026869993471834
+      you must reach_16: 8695388756844561474
+      you must reach_17: -6353744738032199064
+      you must reach_18: -8117598483318758546
+      you must reach_19: 3898547451238861344
+      you must reach_2: 8714418183095954967
+      you must reach_20: -28307185981078814
+      you must reach_21: 5198681681658783444
+      you must reach_22: -2650862050747546382
+      you must reach_23: 2616693995569902820
+      you must reach_24: 880769604437550440
+      you must reach_25: 2301787503986068373
+      you must reach_26: 5328913514988194347
+      you must reach_27: 4199162946433784357
+      you must reach_28: -4804241753786903439
+      you must reach_29: 8810895681709270591
+      you must reach_3: -5048850165060749412
+      you must reach_30: -5638454750334253245
+      you must reach_31: 244944379432532335
+      you must reach_32: 4581401923141662507
+      you must reach_33: 3412335223506275974
+      you must reach_34: -6396028677340676182
+      you must reach_35: 887470227842221760
+      you must reach_36: 9213411118896815905
+      you must reach_37: 890181439630297631
+      you must reach_38: 8965249943971386734
+      you must reach_39: 8425721249775398990
+      you must reach_4: 7841746211008863357
+      you must reach_40: -1956866154367368112
+      you must reach_41: 7634144505199233504
+      you must reach_5: -1849511803012534162
+      you must reach_6: -3671224563051774390
+      you must reach_7: 9010180648557079865
+      you must reach_8: -4159950387223443069
+      you must reach_9: -2387355320141471827
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
