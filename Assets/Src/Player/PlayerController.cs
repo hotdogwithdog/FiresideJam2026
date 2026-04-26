@@ -152,6 +152,14 @@ namespace Player
         // The Slime can not be absorbed
 
         #endregion
+
+        private void OnDestroy()
+        {
+            Inputs.InputReader.Instance.onMove -= OnMove;
+            Inputs.InputReader.Instance.onJump -= OnJump;
+            Inputs.InputReader.Instance.onShootMass -= OnShootMass;
+            Inputs.InputReader.Instance.onRespawnRequest -= OnRespawnRequest;
+        }
     }
 }
 

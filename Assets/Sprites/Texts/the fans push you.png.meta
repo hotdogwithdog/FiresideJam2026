@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 47a644a61e1dfa847aed4b8b8dc65a71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4671408472300240077
+    second: the fans push you_0
+  - first:
+      213: -5077336502901455643
+    second: the fans push you_1
+  - first:
+      213: -5632712025331820651
+    second: the fans push you_2
+  - first:
+      213: 5539610787713826414
+    second: the fans push you_3
+  - first:
+      213: -4043110808695298883
+    second: the fans push you_4
+  - first:
+      213: 7295467337810341385
+    second: the fans push you_5
+  - first:
+      213: 8545091664559817116
+    second: the fans push you_6
+  - first:
+      213: -1210246244988434893
+    second: the fans push you_7
+  - first:
+      213: 2973093843752108487
+    second: the fans push you_8
+  - first:
+      213: -7220749819711387579
+    second: the fans push you_9
+  - first:
+      213: -6616428193017441173
+    second: the fans push you_10
+  - first:
+      213: 2880038124683611217
+    second: the fans push you_11
+  - first:
+      213: 3612093380524802425
+    second: the fans push you_12
+  - first:
+      213: -2631388411286094645
+    second: the fans push you_13
+  - first:
+      213: 510415315863805465
+    second: the fans push you_14
+  - first:
+      213: 3836291883969260784
+    second: the fans push you_15
+  - first:
+      213: 4270590155389725354
+    second: the fans push you_16
+  - first:
+      213: 7992355795003996766
+    second: the fans push you_17
+  - first:
+      213: -7965124208903014771
+    second: the fans push you_18
+  - first:
+      213: 4763041475830487324
+    second: the fans push you_19
+  - first:
+      213: 1019025652093653432
+    second: the fans push you_20
+  - first:
+      213: 7994547336221077551
+    second: the fans push you_21
+  - first:
+      213: -4908392189258739059
+    second: the fans push you_22
+  - first:
+      213: -7701994234485610005
+    second: the fans push you_23
+  - first:
+      213: 4112078832385355312
+    second: the fans push you_24
+  - first:
+      213: -909040292567750906
+    second: the fans push you_25
+  - first:
+      213: -453652371487592036
+    second: the fans push you_26
+  - first:
+      213: 4537090267655678256
+    second: the fans push you_27
+  - first:
+      213: 7235064072869099651
+    second: the fans push you_28
+  - first:
+      213: -302137779674585712
+    second: the fans push you_29
+  - first:
+      213: 6989597583549344777
+    second: the fans push you_30
+  - first:
+      213: 2692418976047075560
+    second: the fans push you_31
+  - first:
+      213: -6345577698553345205
+    second: the fans push you_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the fans push you_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 186
+        width: 66
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3334bcf9eb2db2fb0800000000000000
+      internalID: -4671408472300240077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 190
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e44f6bf95da989b0800000000000000
+      internalID: -5077336502901455643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 198
+        width: 44
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5979600a14694d1b0800000000000000
+      internalID: -5632712025331820651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 268
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6eba9b49a6a0ec40800000000000000
+      internalID: 5539610787713826414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 202
+        width: 48
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4ac2c042cf3e7c0800000000000000
+      internalID: -4043110808695298883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 198
+        width: 56
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e66a404e4be3560800000000000000
+      internalID: 7295467337810341385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 210
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c914d375893469670800000000000000
+      internalID: 8545091664559817116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 212
+        width: 44
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336c6bcc377543fe0800000000000000
+      internalID: -1210246244988434893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 214
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1ceb8491d824920800000000000000
+      internalID: 2973093843752108487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_9
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 222
+        width: 46
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5480320db4ebacb90800000000000000
+      internalID: -7220749819711387579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 220
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64d0512d99bd24a0800000000000000
+      internalID: -6616428193017441173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_11
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 220
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c49515a63f7f720800000000000000
+      internalID: 2880038124683611217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_12
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 224
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97188b9bacbb02230800000000000000
+      internalID: 3612093380524802425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_13
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 230
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc763f7e2e6b7bd0800000000000000
+      internalID: -2631388411286094645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_14
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 220
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e1bf5860c551700800000000000000
+      internalID: 510415315863805465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 226
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fca3b6942f3d3530800000000000000
+      internalID: 3836291883969260784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 86
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaae849ae1f244b30800000000000000
+      internalID: 4270590155389725354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 102
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a7fbf004d8aee60800000000000000
+      internalID: 7992355795003996766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 96
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86b878abb1367190800000000000000
+      internalID: -7965124208903014771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 106
+        width: 46
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1914519cf8b91240800000000000000
+      internalID: 4763041475830487324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 112
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b19d0a7e6e442e00800000000000000
+      internalID: 1019025652093653432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_21
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 112
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20b083027652fe60800000000000000
+      internalID: 7994547336221077551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_22
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 112
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d825ee44f43e1ebb0800000000000000
+      internalID: -4908392189258739059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 120
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9e067fc050d1590800000000000000
+      internalID: -7701994234485610005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_24
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 116
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e6bbc49e9011930800000000000000
+      internalID: 4112078832385355312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_25
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 118
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6076bf29ba07263f0800000000000000
+      internalID: -909040292567750906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_26
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 108
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91f7f9529d44b9f0800000000000000
+      internalID: -453652371487592036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_27
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 120
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039af755f8bf6fe30800000000000000
+      internalID: 4537090267655678256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_28
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 120
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388bd86f07c186460800000000000000
+      internalID: 7235064072869099651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_29
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 114
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09565494a479ecbf0800000000000000
+      internalID: -302137779674585712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_30
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 24
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c236248f9000160800000000000000
+      internalID: 6989597583549344777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 8
+        width: 206
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e09ecd2bc46d5520800000000000000
+      internalID: 2692418976047075560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the fans push you_32
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 88
+        width: 156
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b461714baffe7a0800000000000000
+      internalID: -6345577698553345205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      the fans push you_0: -4671408472300240077
+      the fans push you_1: -5077336502901455643
+      the fans push you_10: -6616428193017441173
+      the fans push you_11: 2880038124683611217
+      the fans push you_12: 3612093380524802425
+      the fans push you_13: -2631388411286094645
+      the fans push you_14: 510415315863805465
+      the fans push you_15: 3836291883969260784
+      the fans push you_16: 4270590155389725354
+      the fans push you_17: 7992355795003996766
+      the fans push you_18: -7965124208903014771
+      the fans push you_19: 4763041475830487324
+      the fans push you_2: -5632712025331820651
+      the fans push you_20: 1019025652093653432
+      the fans push you_21: 7994547336221077551
+      the fans push you_22: -4908392189258739059
+      the fans push you_23: -7701994234485610005
+      the fans push you_24: 4112078832385355312
+      the fans push you_25: -909040292567750906
+      the fans push you_26: -453652371487592036
+      the fans push you_27: 4537090267655678256
+      the fans push you_28: 7235064072869099651
+      the fans push you_29: -302137779674585712
+      the fans push you_3: 5539610787713826414
+      the fans push you_30: 6989597583549344777
+      the fans push you_31: 2692418976047075560
+      the fans push you_32: -6345577698553345205
+      the fans push you_4: -4043110808695298883
+      the fans push you_5: 7295467337810341385
+      the fans push you_6: 8545091664559817116
+      the fans push you_7: -1210246244988434893
+      the fans push you_8: 2973093843752108487
+      the fans push you_9: -7220749819711387579
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,7 +18,17 @@ public class CheckpointManager : Utilities.Singleton<CheckpointManager>
 
         public bool IsValid()
         {
-            return checkpointIndex != 0 && position != Vector2.zero && mass != 0f;
+            return Invalid != this;
+        }
+
+        public static bool operator==(CheckpointData a, CheckpointData b)
+        {
+            return a.checkpointIndex == b.checkpointIndex && a.position == b.position && a.mass == b.mass;
+        }
+
+        public static bool operator!=(CheckpointData a, CheckpointData b)
+        {
+            return !(a == b);
         }
     }
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3706373184837238813}
   - component: {fileID: 6296892004305725505}
   - component: {fileID: 8389943773975599831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pressure Plate
   m_TagString: PressurePlate
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 31c42cd360cbb324caad8751950393f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
