@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3021441302137222387}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 607925201752155367}
   - component: {fileID: 5901417222388621160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Joint center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5502705945795170235}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Checkpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 1443057138394626170}
   - component: {fileID: 1962249069392434817}
   - component: {fileID: 8608763423560206213}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Checkpoint '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

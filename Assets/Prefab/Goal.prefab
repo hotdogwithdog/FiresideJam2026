@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1536614831127282847}
   - component: {fileID: 5298562559566760127}
   - component: {fileID: 2544077567505534299}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3611044426511977739}
   - component: {fileID: 181419045955028444}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Joint center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4953252679329059773}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

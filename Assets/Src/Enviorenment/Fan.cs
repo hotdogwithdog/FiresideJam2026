@@ -19,6 +19,14 @@ public class Fan : ASoftBodyInteract, IActivable
     {
         _particleSystem = GetComponent<ParticleSystem>();
         _animator = GetComponent<Animator>();
+        if (_isActivated)
+        {
+            _animator.SetBool("isActive", true);
+        }
+        else
+        {
+            _animator.SetBool("isActive", false);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
