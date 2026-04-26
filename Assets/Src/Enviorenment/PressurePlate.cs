@@ -17,6 +17,7 @@ namespace Environment
         
         [SerializeField] private bool _isActive;
         private bool _isActiveStartState;
+        private int _numberOfSoftBodiesOnPlate = 0;
         
         private enum ButtonMode
         {
@@ -40,14 +41,18 @@ namespace Environment
         
         protected override void OnSoftBodyEntered(IMass softBodyMass)
         {
-            if (_isActive) return;
+            _numberOfSoftBodiesOnPlate++;
             ActivatePressurePlate();
         }
 
-        protected override void OnSoftBodyStay(IMass softBodyMass) { }
+        protected override void OnSoftBodyStay(IMass softBodyMass)
+        {
+            
+        }
 
         protected override void OnSoftBodyExit(IMass softBodyMass)
         {
+            _numberOfSoftBodiesOnPlate--;
             switch (_buttonMode)
             {
                 case ButtonMode.PressurePlate:
@@ -60,6 +65,10 @@ namespace Environment
 
         private void DeactivatePressurePlate()
         {
+            if (!_isActive) return;
+            
+            if (_numberOfSoftBodiesOnPlate > 0) return;
+            
             foreach (IActivable obj in _activables)
             {
                 obj.SwapState();
@@ -71,6 +80,8 @@ namespace Environment
 
         private void ActivatePressurePlate()
         {
+            if (_isActive) return;
+            
             foreach (IActivable obj in _activables)
             {
                 obj.SwapState();

@@ -88,9 +88,13 @@ namespace Environment
 
         private void Update()
         {
+            
             foreach (SoftBodyData data in _softBodyDataDictionary.Values)
             {
                 if (data.count <= 0) continue;
+                
+                // The MassBall can be absorb inside the collider/trigger
+                if (data.iMass == null) continue; // The Memory of the ball absorbed inside the collider is not free
                 
                 OnSoftBodyStay(data.iMass);
             }
