@@ -1,4 +1,5 @@
 using System.Collections;
+using LevelControl;
 using Player;
 using UI.Menus;
 using UI.Menus.States;
@@ -60,8 +61,12 @@ namespace Environment
     
         private void Win()
         {
+            if (LevelManager.Instance.CurrentLevel == 6)
+            {
+                MenuManager.Instance.ChangeSceneAndState("Credits", new Credits());
+                return;
+            }
             MenuManager.Instance.SetState(new EndLevel());
-            Debug.Log("Win");
             _isActivated = true;
         }
     

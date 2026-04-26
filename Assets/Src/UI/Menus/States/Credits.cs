@@ -6,7 +6,13 @@ namespace UI.Menus.States
     public class Credits: AMenuState
     {
         public Credits() : base("Menus/Credits") { }
-        
+
+        public override void Enter()
+        {
+            base.Enter();
+            
+            Time.timeScale = 1f;
+        }
 
         protected override void OnOptionsClicked(NavigationActions action)
         {
