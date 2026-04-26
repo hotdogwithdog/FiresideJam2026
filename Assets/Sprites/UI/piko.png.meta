@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 55ab175f40d55a84085f845339c0840f
+guid: d3120b369f6b0bf4cb445fb3e8b24ee1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3465286685962602723
-    second: 6_0
+      213: -3281855873260701329
+    second: piko_0
+  - first:
+      213: 6835173579757882586
+    second: piko_1
+  - first:
+      213: 6882253577289963076
+    second: piko_2
+  - first:
+      213: -74035634164228828
+    second: piko_3
+  - first:
+      213: 6665890492218707117
+    second: piko_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 6_0
+      name: piko_0
       rect:
         serializedVersion: 2
-        x: 368
-        y: 46
-        width: 150
-        height: 194
+        x: 147
+        y: 74
+        width: 102
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e801b981eb271030800000000000000
-      internalID: 3465286685962602723
+      spriteID: f693446a8718472d0800000000000000
+      internalID: -3281855873260701329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piko_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 266
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc8a9f082a6bde50800000000000000
+      internalID: 6835173579757882586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piko_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 80
+        width: 126
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44697803a2da28f50800000000000000
+      internalID: 6882253577289963076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piko_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 86
+        width: 15
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d9be4abf8f8fef0800000000000000
+      internalID: -74035634164228828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piko_4
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 101
+        width: 195
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac8954d510028c50800000000000000
+      internalID: 6665890492218707117
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      6_0: 3465286685962602723
+      piko_0: -3281855873260701329
+      piko_1: 6835173579757882586
+      piko_2: 6882253577289963076
+      piko_3: -74035634164228828
+      piko_4: 6665890492218707117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
