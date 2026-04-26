@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 61365312}
   - component: {fileID: 61365314}
   - component: {fileID: 61365315}
+  - component: {fileID: 61365316}
+  - component: {fileID: 61365317}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -202,6 +204,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829f0e4cedc343a7aeb08f4d3c9f8a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelControl.LevelManager
+--- !u!114 &61365316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61365310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffba8c85bb94e8bbc457f35880a807b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Audio.AudioManager
+  audioControl: {fileID: 24100000, guid: fb122d162be2ff34f9c28177e5df1245, type: 2}
+--- !u!114 &61365317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61365310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007bc3e317ff4f04add894ff9d4fadae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Audio.MusicController
+  _audioClipsLow:
+  - {fileID: 8300000, guid: dfef0c6e26eb2cf44bc2a26e9371bc58, type: 3}
+  - {fileID: 8300000, guid: 5b8cf345faec295488f1762f822ddcf2, type: 3}
+  - {fileID: 8300000, guid: 2a19d36add5953147a98b095b48f4453, type: 3}
+  - {fileID: 8300000, guid: 78f418d3578475741b14b9fc068290ba, type: 3}
+  - {fileID: 8300000, guid: f648d320aaa9e4c40b3a40ee15a447cd, type: 3}
+  - {fileID: 8300000, guid: 2cfc635aa59270d49b182ea820adedef, type: 3}
+  - {fileID: 8300000, guid: d52be1968bc59334d8f6d7909660d641, type: 3}
+  - {fileID: 8300000, guid: d47ee5d54e530bd4fba990074835fa82, type: 3}
+  _audioClipsMid:
+  - {fileID: 8300000, guid: 8388d4a89e7f9734993af7e8ba7fe460, type: 3}
+  - {fileID: 8300000, guid: e589dac2a61ffee4c9de02da4312dfee, type: 3}
+  - {fileID: 8300000, guid: 9b8dc86ed40bb214cb06984e742dc4bc, type: 3}
+  - {fileID: 8300000, guid: 2ba9e38bac7b1204fb904d54d29c777d, type: 3}
+  - {fileID: 8300000, guid: d7339f0343d902547890a1946561331e, type: 3}
+  - {fileID: 8300000, guid: ef5670ea8aec46b45a92f067b218e534, type: 3}
+  - {fileID: 8300000, guid: 4c7ba3685e6903e4e9b7959bbb8642e7, type: 3}
+  - {fileID: 8300000, guid: 05083d7bc00b2d04f973dd304fae7e53, type: 3}
+  _audioClipsHigh:
+  - {fileID: 8300000, guid: 6acff4fa16009db428894387a192225b, type: 3}
+  - {fileID: 8300000, guid: 9b85d1d37e381c847897f8775cd39434, type: 3}
+  - {fileID: 8300000, guid: d1fcefb5a97fd4c42ac6dfe3a8f20160, type: 3}
+  - {fileID: 8300000, guid: 63f49660a7de9f441bdbe6643135cdfc, type: 3}
+  - {fileID: 8300000, guid: 1a65656559cd3264e893470f9cc516b8, type: 3}
+  - {fileID: 8300000, guid: 7bb5e3ea313081449a8fa8d7a65e6ece, type: 3}
+  - {fileID: 8300000, guid: 7bb5a484f6fb850469d87dbb732f9af3, type: 3}
+  - {fileID: 8300000, guid: 4320e8646f396ef4bb6d0bd9822e338e, type: 3}
 --- !u!1 &1288735847
 GameObject:
   m_ObjectHideFlags: 0
