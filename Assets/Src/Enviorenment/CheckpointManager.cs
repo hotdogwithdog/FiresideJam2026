@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Environment
 {
@@ -35,7 +37,21 @@ namespace Environment
         }
 
         private CheckpointData _currentCheckpointData = CheckpointData.Invalid;
-    
+
+        private void Start()
+        {
+            SceneManager.sceneLoaded += OnSceneLoad;
+        }
+
+        private void OnDestroy()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoad;
+        }
+
+        private void OnSceneLoad(Scene scene, LoadSceneMode mode)
+        {
+            _currentCheckpointData = CheckpointData.Invalid;
+        }
 
         public void SetCheckpoint(CheckpointData data)
         {
