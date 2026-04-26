@@ -91,8 +91,8 @@ RectTransform:
   m_GameObject: {fileID: 210215367872098151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.48, y: 2.48, z: 2.48}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2944516544526341642}
   - {fileID: 6733928551792040443}
@@ -1078,8 +1078,8 @@ RectTransform:
   m_GameObject: {fileID: 3435983038739660148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.48, y: 2.48, z: 2.48}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8565645674166217751}
   - {fileID: 7910431460525188194}
@@ -1617,6 +1617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.Menus.NavigationEvent
   _action: 6
+  _activateAudioClip: {fileID: 8300000, guid: 4b17088078ee90843be94bf63f946745, type: 3}
 --- !u!114 &9136232629925320829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,8 +1675,8 @@ RectTransform:
   m_GameObject: {fileID: 7774698108918791869}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.48, y: 2.48, z: 2.48}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 600804257144386741}
   - {fileID: 5438936866666443869}

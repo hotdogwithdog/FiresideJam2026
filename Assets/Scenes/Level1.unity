@@ -51743,7 +51743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   _offset: {x: 0, y: 3}
-  _smoothTime: 1
+  _smoothTime: 0.1
 --- !u!114 &168130153
 MonoBehaviour:
   m_ObjectHideFlags: 0

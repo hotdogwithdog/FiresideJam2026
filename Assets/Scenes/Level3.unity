@@ -43428,7 +43428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   _offset: {x: 0, y: 3}
-  _smoothTime: 1
+  _smoothTime: 0.1
 --- !u!114 &168130153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46180,7 +46180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2544077567505534299, guid: fa0ca5418f163fa4c836f46e6a833762, type: 3}
       propertyPath: _massCheck
-      value: 40
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4953252679329059773, guid: fa0ca5418f163fa4c836f46e6a833762, type: 3}
       propertyPath: m_LocalPosition.x

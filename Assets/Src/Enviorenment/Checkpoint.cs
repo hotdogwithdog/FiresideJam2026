@@ -74,7 +74,7 @@ namespace Environment
 
             _isActivated = true;
             
-            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,2f);
+            AudioManager.Instance.PlayOneShot2D(_activateAudioClip,4f);
         }
     
         public void Activate()

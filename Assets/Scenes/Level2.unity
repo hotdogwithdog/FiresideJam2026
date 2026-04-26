@@ -43583,7 +43583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   _offset: {x: 0, y: 3}
-  _smoothTime: 1
+  _smoothTime: 0.1
 --- !u!114 &168130153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44922,11 +44922,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3567619035708125130, guid: 5682440476d7962468fb9238f1aee085, type: 3}
       propertyPath: _interval
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3567619035708125130, guid: 5682440476d7962468fb9238f1aee085, type: 3}
       propertyPath: _isActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567619035708125130, guid: 5682440476d7962468fb9238f1aee085, type: 3}
+      propertyPath: _massQuantity
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3567619035708125130, guid: 5682440476d7962468fb9238f1aee085, type: 3}
       propertyPath: _massBallCuantity
@@ -46950,6 +46954,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1443057138394626170, guid: 87bdacf95782ae440a407eec1d6d041f, type: 3}
+      propertyPath: _index
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1443057138394626170, guid: 87bdacf95782ae440a407eec1d6d041f, type: 3}
       propertyPath: _massCheck
       value: 30
