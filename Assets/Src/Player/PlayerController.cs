@@ -1,4 +1,6 @@
 using System;
+using Environment;
+using LevelControl;
 using MassInteraction;
 using SoftBodyControllers;
 using UnityEngine;
@@ -98,10 +100,10 @@ namespace Player
                 _playerSoftBody.Teleport(checkpointData.position);
                 _playerSoftBody.SetScale(Utilities.Maths.GetScaleFromMass(checkpointData.mass));
                 _mass = checkpointData.mass;
-                foreach (GameObject massBall in GameObject.FindGameObjectsWithTag("MassBall"))
-                {
-                    Destroy(massBall);
-                }
+                
+                LevelManager.Instance.DestroyMassBalls();
+                LevelManager.Instance.RestartLevelEnvironment();
+                
                 return;
             }
             // if no checkpoint we can just restart the level

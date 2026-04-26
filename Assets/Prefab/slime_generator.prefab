@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3567619035708125130}
   m_Layer: 0
   m_Name: slime_generator
-  m_TagString: Untagged
+  m_TagString: Reseteable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlimeGenerator
   _massBallPrefab: {fileID: 5047699590344100289, guid: e449df9d7efa5ed469629dc12cc4c5d0, type: 3}
-  _massCuantity: 5
+  _massQuantity: 5
   _interval: 2
-  _massBallCuantity: 5
+  _massBallQuantity: 5
   _spawnPoint: {fileID: 6367777443672708537}
   _isActive: 1
 --- !u!1 &6434777142420648244
