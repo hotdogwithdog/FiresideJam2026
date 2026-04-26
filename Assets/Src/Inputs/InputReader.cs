@@ -46,16 +46,18 @@ namespace Inputs
             //actions.UI.SetCallbacks(this);
             
             actions.Enable();
+            EnableJustCommonActions();
         }
 
         private void OnDisable()
         {
+            if (actions == null) return;
             actions.Player.SetCallbacks(null);
             actions.Common.SetCallbacks(null);
             actions.UI.SetCallbacks(null);
             actions.Disable();
         }
-        
+
         public void EnableJustCommonActions()
         {
             actions.Common.Enable();
