@@ -3,66 +3,72 @@ using System.Collections;
 using MassInteraction;
 using UnityEngine;
 
-public class SlimeGenerator : MonoBehaviour, IActivable
+namespace Environment
 {
-    
-    [Header("Mass")]
-    [SerializeField] private GameObject _massBallPrefab;
-    [SerializeField] private float _massCuantity = 5f;
-    [SerializeField] private float _interval = 2f;
-    [SerializeField] private int _massBallCuantity = 5;
-
-    [SerializeField] private Transform _spawnPoint;
-    
-    [SerializeField] private bool _isActive;
-
-    private void Start()
-    {
-        if (_isActive)
-        {
-            Activate();
-        }
-        else
-        {
-            DeActivate();
-        }
-    }
-
-    public void Activate()
+    public class SlimeGenerator : MonoBehaviour, IActivable, IReseteable
     {
         
-       StartCoroutine(nameof(SpawnBall));
-       _isActive = true;
-    }
+        [Header("Mass")]
+        [SerializeField] private GameObject _massBallPrefab;
+        [SerializeField] private float _massQuantity = 5f;
+        [SerializeField] private float _interval = 2f;
+        [SerializeField] private int _massBallQuantity = 5;
+        private int _massBallQuantityStartState;
 
-    private IEnumerator SpawnBall()
-    {
-        while (_massBallCuantity > 0)
+        [SerializeField] private Transform _spawnPoint;
+        
+        [SerializeField] private bool _isActive;
+        private bool _isActiveStartState;
+
+        private void Start()
         {
-            GameObject massBallGameObject = Instantiate(_massBallPrefab);
-            massBallGameObject.transform.position = _spawnPoint.position;
-            MassBall massBall = massBallGameObject.GetComponent<MassBall>();
-            massBall.Init(_massCuantity);
-            yield return new WaitForSeconds(_interval);
-            _massBallCuantity--;
+            _isActiveStartState = _isActive;
+            _massBallQuantityStartState = _massBallQuantity;
+            
+            if (_isActive) Activate();
+            else DeActivate();
         }
-    }
 
-    public void DeActivate()
-    {
-       StopCoroutine(nameof(SpawnBall));
-       _isActive = false;
-    }
-
-    public void SwapState()
-    {
-        if (_isActive)
+        public void Activate()
         {
-            DeActivate();
+            
+           StartCoroutine(nameof(SpawnBall));
+           _isActive = true;
         }
-        else
+
+        private IEnumerator SpawnBall()
         {
-            Activate();
+            while (_massBallQuantity > 0)
+            {
+                GameObject massBallGameObject = Instantiate(_massBallPrefab);
+                massBallGameObject.transform.position = _spawnPoint.position;
+                MassBall massBall = massBallGameObject.GetComponent<MassBall>();
+                massBall.Init(_massQuantity);
+                yield return new WaitForSeconds(_interval);
+                _massBallQuantity--;
+            }
+        }
+
+        public void DeActivate()
+        {
+           StopCoroutine(nameof(SpawnBall));
+           _isActive = false;
+        }
+
+        public void SwapState()
+        {
+            if (_isActive) DeActivate();
+            else Activate();
+        }
+
+        public void ResetState()
+        {
+            _isActive = _isActiveStartState;
+            _massBallQuantity = _massBallQuantityStartState;
+            
+            if (_isActive)  Activate();
+            else DeActivate();
         }
     }
 }
+
